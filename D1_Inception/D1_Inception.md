@@ -14,7 +14,7 @@ Consumer Segment: People who appreciate logging experiences from their day.
 
 ## 3. Interviews summary
 
-1st interview
+### 1st interview
 
 Who: Susan Hagemann (Shelby’s mom)
 
@@ -37,7 +37,7 @@ Assessment:
 * Nice to have: The ability to customize what news/news articles are integrated into the app based on personal information and interests, the ability to include other information about the day such as what food the user ate or the clothes they wore, including the local weather into the journal entry, the ability to use the journal as a calendar for planning.
 * Don’t care: -
 
-2nd interview
+### 2nd interview
 
 Who: John Hilley (my father)
 
@@ -59,7 +59,7 @@ Hypothesis validated:
 Assessment: 
 * Must Have: Adding photos is most important dynamic and basically everything else would be cool.  
 
-3rd interview
+### 3rd interview
 
 Who: Laura Sanderson
 
