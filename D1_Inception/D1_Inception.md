@@ -4,7 +4,7 @@ Project introduction, value propositions, and prospective user interviews.
 
 ## 1. Introduction
 
-Journal Time is a mobile application for use as an enhanced diary.  Each entry will begin with text input and basic information. From there, the ability to enhance their journal post will be available by including additional information directly from the mobile device.  Relevant images along with calendar events, email conversations, text conversations, headlines of the day, and social media posts will be available for input within the journal entry. The user would also have the ability to export each entry for sharing with family or friends.
+Journal Time is a mobile application for use as an enhanced diary.  Each entry will begin with text input and basic information. From there, the ability to enhance the journal post will be available by including additional information directly from the mobile device.  Relevant images along with calendar events, email conversations, text conversations, headlines of the day, and social media posts will be available for input within the journal entry. The user will also have the ability to export each entry for sharing with family or friends.
 
 ## 2. Initial value proposition and consumer segments
 
