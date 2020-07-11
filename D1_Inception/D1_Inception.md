@@ -48,11 +48,14 @@ Consumer Segment: mature / high-profile individual who journals on a regular bas
 Key Insights: 
 * Key desired features: Journal (word processing), ability to select photos from camera, Headlines of the Day, calendar events, pull in select text conversations, pull in select email conversations.  (Not interested in social media)
 * Ideally, would have the ability to write on a desktop application as well.  Also desire to be able to export the information.
+
 Representation Quotes: 
 * “I would definitely use this.”  
 * “The ability to select from photos, texts, emails, texts to add to a journal entry would allow me to add a lot of additional context.”
+
 Hypothesis validated: 
 * Demand for enhanced journal.
+
 Assessment: 
 * Must Have: Adding photos is most important dynamic and basically everything else would be cool.  
 
@@ -67,10 +70,13 @@ Consumer Segment: young individual who used to journal regularly but is now just
 Key insights:
 * Key desired features: integrating the photos from the camera, include the location feature from the map
 * Want customizable features for the journal like the ability to add your own goals for the day, and the ability to choose which apps the journal pulls its information from.
+
 Representation Quotes:
 * “I would love to use this while on vacation so i can track where i went on the trip and then be able to look back at the memories later.”
+
 Hypothesis validated:
 * Would use this enhanced journal for important life events such as vacations.
+
 Assessment:
 * Must have: Integrated photos,ability to add location
 
