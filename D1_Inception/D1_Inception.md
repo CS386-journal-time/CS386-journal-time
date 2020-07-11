@@ -15,6 +15,7 @@ Consumer Segment: People who appreciate logging experiences from their day.
 ## 3. Interviews summary
 
 1st interview
+
 Who: Susan Hagemann (Shelby’s mom)
 
 When: July 10th, 2020
@@ -37,9 +38,13 @@ Assessment:
 * Don’t care: -
 
 2nd interview
+
 Who: John Hilley (my father)
+
 When: July 10, 2020
+
 Consumer Segment: mature / high-profile individual who journals on a regular basis
+
 Key Insights: 
 * Key desired features: Journal (word processing), ability to select photos from camera, Headlines of the Day, calendar events, pull in select text conversations, pull in select email conversations.  (Not interested in social media)
 * Ideally, would have the ability to write on a desktop application as well.  Also desire to be able to export the information.
@@ -52,10 +57,12 @@ Assessment:
 * Must Have: Adding photos is most important dynamic and basically everything else would be cool.  
 
 3rd interview
+
 Who: Laura Sanderson
+
 When: 7/10/2020
 
-CConsumer Segment: young individual who used to journal regularly but is now just active on most social media
+Consumer Segment: young individual who used to journal regularly but is now just active on most social media
 
 Key insights:
 * Key desired features: integrating the photos from the camera, include the location feature from the map
