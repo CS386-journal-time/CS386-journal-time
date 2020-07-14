@@ -37,13 +37,31 @@ Journal Time is a diary app that allows users to create detailed journal entries
 
 6. User may choose to share their journal with other people via email, text link or through the app.
 
+7. Users can share their journal with others for group collaboration.
+
+8. Users can login with and share directly to social media.
+
+9. Users may choose to incorporate weather data into their journal.
+
+10. User can use their favorite streaming service to incorporate music in the journal.
+
+11. Users can craft their journal entries with options other than text input. (stylus, voice, etc.).
+
 ## 4. Non-functional requirements
 
-Lorem Ipsum
+1. Security (Secure storage of entries)
+
+2. Ease of use (creating/editing entries)
+
+3. Efficiency (quickly finding already created entries)
+
+4. Portability (multiple device sharing)
+
+5. Performance (ability to load journal entries within seconds)
 
 ## 5. MVP
 
-Lorem Ipsum
+To create our minimum viable product, we will begin with the basics of our app, photo and text input with a coherent and clean user interface.  Capture will be a no-frills journaling app with the ability to share entries in its first iteration.
 
 ## 6. Use cases
 
