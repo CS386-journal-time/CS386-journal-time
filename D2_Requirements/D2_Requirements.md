@@ -25,7 +25,17 @@ Journal Time is a diary app that allows users to create detailed journal entries
 
 ## 3. Functional Requirements (features)
 
-Lorem Ipsum
+1. Users can enter their own text (journal) entries.
+
+2. Users can choose which photos they would like displayed on their journal.
+
+3. Users can choose if they want different locations they visited throughout the day displayed on their journal.
+
+4. User may choose whether or not to pull relevant news articles into their journal.
+
+5. User can choose a journal theme. (journal theme will include color and font)
+
+6. User may choose to share their journal with other people via email, text link or through the app.
 
 ## 4. Non-functional requirements
 
