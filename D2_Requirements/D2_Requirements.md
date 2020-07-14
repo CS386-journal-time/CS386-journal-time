@@ -6,6 +6,8 @@ Results of the requirements engineering for Journal Time.
 
 ### 1.1 Problem Statement
 
+The problem of Context and information loss affects everyone using technology; the impact of which causes people to miss remember and tell false stories.
+
 ### 1.2 Product Position Statement
 
 For people who appreciate logging experiences from they day, Capture is a journaling app that automatically integrates relevant information, such as photos into entries. Unlike other journaling and note-taking applications, Capture takes care of integrating information into journal entries for its users.
@@ -17,7 +19,7 @@ Journal Time is a diary app that allows users to create detailed journal entries
 ## 2. Stakeholders
 
 * Those who journal - People downloading Capture in order to keep track of their lives and integrate relevant information into their entries.  We believe that there will be initial
-interest from those who wish to capture the most detail about their daily lives. 
+interest from those who wish to capture the most detail about their daily lives.
 
 
 ## 3. Functional Requirements (features)
