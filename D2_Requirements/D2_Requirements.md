@@ -16,7 +16,8 @@ Journal Time is a diary app that allows users to create detailed journal entries
 
 ## 2. Stakeholders
 
-* Those who journal - People downloading Capture in order to keep track of their lives and integrate relevant information into their entries.
+* Those who journal - People downloading Capture in order to keep track of their lives and integrate relevant information into their entries.  We believe that there will be initial
+interest from those who wish to capture the most detail about their daily lives. 
 
 
 ## 3. Functional Requirements (features)
