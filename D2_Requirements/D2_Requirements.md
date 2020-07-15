@@ -71,7 +71,7 @@ To create our minimum viable product, we will begin with the basics of our app, 
 
 ### 6.1 Use case diagram
 
-![Journal Time Use Case Diagram](jappUse.png)
+![Journal Time Use Case Diagram](./img/use-cases.png)
 
 ### 6.2 Use case descriptions
 
@@ -151,9 +151,6 @@ The Journal User is logged in and viewing the app in a “Calendar” view displ
 8.	**Special Requirements** 
   A range must be determined for dates. 
   Alternative calendar views
-
-
-
 
 
 ## 7. User stories
