@@ -10,7 +10,7 @@ Our memories can be greatly enhanced by including more context and information w
 
 ### 1.2 Product Position Statement
 
-For people who appreciate logging experiences from their day, Journal Time is a journaling app that automatically integrates relevant information, such as photos, into entries. Unlike other journaling and note-taking applications, Capture takes care of integrating information into journal entries for its users.
+For people who appreciate logging experiences from their day, Journal Time is a journaling app that automatically integrates relevant information, such as photos, into entries. Unlike other journaling and note-taking applications, Journal Time takes care of integrating information into journal entries for its users.
 
 ### 1.3 Value Proposition
 
@@ -66,7 +66,7 @@ Journaling and diary keeping have long been used to preserve memories and recall
 
 ## 5. MVP
 
-To create our minimum viable product, we will begin with the basics of our app, photo and text input.  Following that, a coherent and clean user interface will begin to form from our data received from beta testing and interviewing users.  The app will move through many iterations before we find an attractive and functional look.  Features wise, we will continue to conduct studies about what features potential users would like to see added to the app in the future.  As we learn from these studies, the app will morph in the direction of what the the user base would like to see.
+To create our minimum viable product, we will begin with the basics of our app, photo and text input.  Following that, a coherent and clean user interface will begin to form from our data received from beta testing and interviewing users.  The app will move through many iterations before we find an attractive and functional look.  Features wise, we will continue to conduct studies about what potential users would like to see added to the app in the future.  As we learn from these studies, the app will morph in the direction of what the our user base envisons.
 
 ## 6. Use cases
 
@@ -94,13 +94,13 @@ To create our minimum viable product, we will begin with the basics of our app, 
 
 3. **Preconditions**
 
-   The journal user has navigated to a day page.
+   The Journal User has navigated to a day page.
 
 4. **Basic Flow of Events**
 
    * The use case begins when the Journal User selects a specific day's journal page.
   
-   * The journal user will see a small text box with either 1) no text if it is a previously unwritten journal or 2) the “hardcoded” text of that day’s entry that the user had previously written.
+   * The Journal User will see a small text box with either 1) no text if it is a previously unwritten journal or 2) the “hardcoded” text of that day’s entry that the user had previously written.
 
    * The user “taps” on the text box area to edit the text.
 
@@ -122,7 +122,7 @@ To create our minimum viable product, we will begin with the basics of our app, 
 
    **5.2 Navigate Back / Cancel Key**
 
-   If at any point during the editing prior to a save, if the Journal User presses the cancel key, this will act the same as pressing “cancel” where no changes are updated and the Journal user is taken back to the day’s page.
+   If at any point during the editing prior to a save, if the Journal User presses the cancel key, this will act the same as pressing “cancel” where no changes are updated and the Journal User is taken back to the day’s page.
 
 6. **Key Scenarios**
 
@@ -136,7 +136,7 @@ To create our minimum viable product, we will begin with the basics of our app, 
 
    The journal entry has been updated with new text or canceled.  That days journal entry reflect changes and can be viewed by the Journal User.
 
-   **Special Requirements**
+8. **Special Requirements**
 
    The basic display text box should expand for increasing amounts of text.
 
@@ -147,7 +147,8 @@ To create our minimum viable product, we will begin with the basics of our app, 
 ![Journal Time Use Case Diagram](img/UseCaseExample_Navigate.png)
 
 1. **Brief Description**
-This function allows a user to navigate to any given day’s journal page.
+
+   This function allows a user to navigate to any given day’s journal page.
 
 2. **Actors**
 
@@ -187,7 +188,7 @@ This function allows a user to navigate to any given day’s journal page.
 
    **7.1 Successful Completion**
 
-   The journal user can view a give day’s journal page in a layout that provides additional context to that day.  
+   The Journal User can view a give day’s journal page in a layout that provides additional context to that day.  
 
 8. **Special Requirements**
 
@@ -195,32 +196,39 @@ This function allows a user to navigate to any given day’s journal page.
 
    Alternative calendar views
 
-### Use Case: Share journal entry
+### Use Case: Share Journal Entry
+
+![Journal Time Use Case Diagram](img/UseCaseDiagram_Share.jpeg)
 
 1. **Brief Description**
+
    This function allows a user to share a journal entry with their peers.
 
 2. **Actors**
 
    **2.1 Journal User**
 
-   **2.2 Shared Peers**
+   **2.2 Shared User**
 
 3. **Preconditions**
 
-   The journal user has created an entry and navigated to it.
+   The Journal User has created an entry and navigated to it.
 
 4. **Basic Flow of Events**
 
-   * Within the currently selected journal entry, the user selects the share button.
+   * The use case begins with the user currently within a selected journal entry.
 
-   * The share button brings up a menu for the user to select the recipient of the entry through text message or email.
+   * The user taps a dedicated share button.
+
+   * The share button brings up a menu for the user to select the avenue of sharing the journal entry.
   
-   * Once selected, the entry is then exported to PDF and shared.
+   * The journal entry is then exported to the selected avenue, such as email, text, or social media.
+  
+   * The use case ends successfully with the app handing off the exported journal entry to the correct sharing avenue.
 
 5. **Alternative Flows**
 
-   **5.1 Journal user cancels share**
+   **5.1 Journal user cancels the share**
 
    The journal user can rescind the share.
 
@@ -232,11 +240,13 @@ This function allows a user to navigate to any given day’s journal page.
 
 7. **Post Conditions**
   
-   **7.1 Successful share**
+   **7.1 Successful Share**
+
+   The journal entry has been shared to the appropriate contact.
 
 8. **Special Requirements**
 
-   The choice of shared contact should bring up the correct app for sharing
+   The choice of shared contact should bring up the correct app for sharing.
 
 ## 7. User stories
 
@@ -244,7 +254,7 @@ This function allows a user to navigate to any given day’s journal page.
 
 * As a Journal Taker, I want to modify an existing Journal Page to expand it or make corrections.
 
-* As a Journal Taker, I want to Upload images to a Journal Page to provide context to my notes.
+* As a Journal Taker, I want to upload images to a Journal Page to provide context to my notes.
 
 * As a Journal Taker, I want to link a calender day to a Journal Page to add context to my notes.
 
