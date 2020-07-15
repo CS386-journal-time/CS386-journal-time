@@ -156,7 +156,12 @@ The Journal User is logged in and viewing the app in a “Calendar” view displ
 
 ## 7. User stories
 
-Lorem Ipsum
+  + As a Journal Taker I want to create a new Journal Page to organize my thoughts and notes.
+  + As a Journal Taker I want to modify an existing Journal Page to expand it or make corrections.
+  + As a Journal Taker I want to Upload images to a Journal Page to provide context to my notes.
+  + As a Journal Taker I want to link a calender day to a Journal Page to add context to my notes.
+  + As a Guest I want to view a Journal page that was shared with me to respond to the sharer.
+
 
 ## 8. Trello
 
