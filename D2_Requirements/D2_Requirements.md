@@ -144,7 +144,7 @@ To create our minimum viable product, we will begin with the basics of our app, 
 
 ![Journal Time Navigate Use Case Diagram](./img/UseCaseDiagram_Navigate.png)
 
-![Journal Time Navigate Use Case Example](./img/UseCaseExample_Navigate.png)
+![Journal Time Navigate Use Case Example](./img/UseCaseExample_Navigate.PNG)
 
 1. **Brief Description**
 
