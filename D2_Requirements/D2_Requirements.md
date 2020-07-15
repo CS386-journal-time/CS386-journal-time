@@ -59,6 +59,10 @@ Journal Time is a diary app that allows users to create detailed journal entries
 
 5. Performance (ability to load journal entries within seconds)
 
+6. Maintainability (easy to test and fix)
+
+7. Effectiveness (will increase the retention of context and information)
+
 ## 5. MVP
 
 To create our minimum viable product, we will begin with the basics of our app, photo and text input with a coherent and clean user interface.  Capture will be a no-frills journaling app with the ability to share entries in its first iteration.
