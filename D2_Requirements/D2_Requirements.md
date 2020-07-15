@@ -158,25 +158,17 @@ The Journal User is logged in and viewing the app in a “Calendar” view displ
 
 ## 7. User stories
 
-
   + As a Journal Taker I want to create a new Journal Page to organize my thoughts and notes.
   + As a Journal Taker I want to modify an existing Journal Page to expand it or make corrections.
   + As a Journal Taker I want to Upload images to a Journal Page to provide context to my notes.
   + As a Journal Taker I want to link a calender day to a Journal Page to add context to my notes.
   + As a Guest I want to view a Journal page that was shared with me to respond to the sharer.
-
-1. As a Journal taker, I want this app to allow a customizable work space.
-
-2. As a journal taker, I want this app to allow easy photo integration.
-
-3. As a journal taker, I want this app to allow me to share my journals with my friends and family.
-
-4. As a Journal User I want to be able to login to my account from other devices so that I can access my entries and create new ones.
-
-5. As a user I want each journal page to highlight places that I visited that day so that I can recall events that I might not otherwise journal about.
-
-6. As a user I want each journal page to highlight key news stories of the day so that I can recall world events that may have influenced my day. 
-
+  + As a Journal Taker I want to customize my workspace so my Journal pages can be personalized.
+  + As a Journal taker, I want to share my journals with my friends and family to include them in my activities.
+  + As a Journal User I want to be able to login to my account from other devices so that I can access my entries and create new ones.
+  + As a Journal Taker I want each journal page to highlight places that I visited that day so that I can recall events that I might not otherwise journal about.
+  + As a Journal Taker I want each journal page to highlight key news stories of the day so that I can recall world events that may have influenced my day.
+  + As a Journal Taker I want to save my Journal Pages so I can review them later.
 
 
 ## 8. Trello
