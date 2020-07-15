@@ -110,9 +110,8 @@ If at any point during the editing prior to a save, if the Journal User presses 
 The journal entry has been updated with new text or canceled.  That days journal entry reflect changes and can be viewed by the Journal User.
 
 8.	**Special Requirements** <br/>
-The basic display text box should expand for increasing amounts of text.
+The basic display text box should expand for increasing amounts of text. <br/>
 
-<br/>
 ### Use-Case: Navigate to a Day’s Journal Page
 
 1.	**Brief Description** <br/>
@@ -143,7 +142,7 @@ The Journal User is logged in and viewing the app in a “Calendar” view displ
 7.	**Post-conditions** <br/>
   **7.1	Successful Completion** <br/>
   The journal user can view a give day’s journal page in a layout that provides additional context to that day.  
-  
+
 8.	**Special Requirements** <br/>
   A range must be determined for dates. <br/>
   Alternative calendar views<br/>
