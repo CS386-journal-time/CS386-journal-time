@@ -77,15 +77,15 @@ To create our minimum viable product, we will begin with the basics of our app, 
 
 ### Use-Case: Edit Journal Entry
 
-1.	**Brief Description** <br/>
+1.	**Brief Description** 
 This function allows a user to edit (including a new entry) a journal entry for a
 specific day.
 
-2.	**Actors** <br/>
-**2.1	Journal User** <br/>
-**2.2	Back-end** <br/>
+2.	**Actors** 
+**2.1	Journal User** 
+**2.2	Back-end** 
 
-3.	**Preconditions** <br/>
+3.	**Preconditions** 
 The Journal User has navigated to a day page.
 
 4.	**Basic Flow of Events**
@@ -98,34 +98,34 @@ The Journal User has navigated to a day page.
   *	If “save” is pressed, the journal entry object is updated with the new text and provided to the Back-End.
   *	The use case ends successfully.  The page reverts to the “hardcoded” text version where the new edits have been included, and user has ability to navigate throughout the app.  
 
-5.	**Alternative Flows** <br/>
-**5.1	Cancel**<br/>
+5.	**Alternative Flows** 
+**5.1	Cancel**
 If the Journal User selects cancel: The use case ends with no changes.  The page reverts to the “hardcoded” text version with no edits being included, and user has ability to navigate throughout the app.  
 
-**5.2	Navigate Back / Cancel Key** <br/>
+**5.2	Navigate Back / Cancel Key** 
 If at any point during the editing prior to a save, if the Journal User presses the cancel key, this will act the same as pressing “cancel” where no changes are updated and the Journal user is taken back to the day’s page.
 
-6.	**Key Scenarios** <br/>
-**6.1	Journal User makes changes**<br/>
-**6.2	Journal User cancels changes**<br/>
+6.	**Key Scenarios** 
+**6.1	Journal User makes changes**
+**6.2	Journal User cancels changes**
 
-7.	**Post-conditions** <br/>
-**7.1	Successful Completion**<br/>
+7.	**Post-conditions** 
+**7.1	Successful Completion**
 The journal entry has been updated with new text or canceled.  That days journal entry reflect changes and can be viewed by the Journal User.
 
-8.	**Special Requirements** <br/>
+8.	**Special Requirements** 
 The basic display text box should expand for increasing amounts of text.
 
-<br/>
+
 ### Use-Case: Navigate to a Day’s Journal Page
 
-1.	**Brief Description** <br/>
+1.	**Brief Description** 
 This function allows a user to navigate to any given day’s journal page.
 
-2.	**Actors** <br/>
-  **2.1	Journal User** <br/>
+2.	**Actors** 
+  **2.1	Journal User** 
 
-3.	**Preconditions** <br/>
+3.	**Preconditions** 
 The Journal User is logged in and viewing the app in a “Calendar” view displaying a month of a year.  The default setting on opening the app takes the Journal User to the current date.  
 
 4.	**Basic Flow of Events**
@@ -134,25 +134,25 @@ The Journal User is logged in and viewing the app in a “Calendar” view displ
   *	Within a specific day’s journal page, the user can view / edit the journal page, return to the calendar view, or navigate to the proceeding or following day’s journal page by swiping left or right.
   *	The use case ends successfully. The user arrives at the journal page of the desired date of choice.  
 
-5.	**Alternative Flows** <br/>
-  **5.1	Choose a different view** <br/>
+5.	**Alternative Flows** 
+  **5.1	Choose a different view** 
   The Journal User can select a different calendar view within the options tab
-  **5.2	Scroll Calendar Beyond Range** <br/>
+  **5.2	Scroll Calendar Beyond Range** 
   The back-end capabilities will determine the range of the calendar dates.
 
-6.	**Key Scenarios** <br/>
-  **6.1	Journal User navigates** <br/>
-  **6.2	Journal User can navigate back to calendar view or other days** <br/>
+6.	**Key Scenarios** 
+  **6.1	Journal User navigates** 
+  **6.2	Journal User can navigate back to calendar view or other days** 
 
-7.	**Post-conditions** <br/>
-  **7.1	Successful Completion** <br/>
+7.	**Post-conditions** 
+  **7.1	Successful Completion** 
   The journal user can view a give day’s journal page in a layout that provides additional context to that day.  
 
-8.	**Special Requirements** <br/>
-  A range must be determined for dates. <br/>
-  Alternative calendar views<br/>
+8.	**Special Requirements** 
+  A range must be determined for dates. 
+  Alternative calendar views
 
-<br/>
+
 
 
 
