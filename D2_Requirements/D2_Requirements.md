@@ -158,6 +158,13 @@ The Journal User is logged in and viewing the app in a “Calendar” view displ
 
 ## 7. User stories
 
+
+  + As a Journal Taker I want to create a new Journal Page to organize my thoughts and notes.
+  + As a Journal Taker I want to modify an existing Journal Page to expand it or make corrections.
+  + As a Journal Taker I want to Upload images to a Journal Page to provide context to my notes.
+  + As a Journal Taker I want to link a calender day to a Journal Page to add context to my notes.
+  + As a Guest I want to view a Journal page that was shared with me to respond to the sharer.
+
 1. As a Journal taker, I want this app to allow a customizable work space.
 
 2. As a journal taker, I want this app to allow easy photo integration.
@@ -169,6 +176,7 @@ The Journal User is logged in and viewing the app in a “Calendar” view displ
 5. As a user I want each journal page to highlight places that I visited that day so that I can recall events that I might not otherwise journal about.
 
 6. As a user I want each journal page to highlight key news stories of the day so that I can recall world events that may have influenced my day. 
+
 
 
 ## 8. Trello
