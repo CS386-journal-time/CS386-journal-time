@@ -79,25 +79,24 @@ specific day.
 
 2.	**Actors** <br/>
 **2.1	Journal User** <br/>
-**2.2	Back-end Server (?)** <br/>
+**2.2	Back-end** <br/>
 
 3.	**Preconditions** <br/>
 The Journal User has navigated to a day page.
 
-4.	**Basic Flow of Events** <br/>
-  *  The use case begins when Journal User goes to a specific day and decides to .
-  *  The Journal user can see a small text box with either no text if it is a previously unwritten journal or the “hardcoded” text of that day’s entry that the user had previously written.
+4.	**Basic Flow of Events**
+  *  The use case begins when the Journal User selects a specific day's journal page.
+  *  The Journal user will see a small text box with either 1) no text if it is a previously unwritten journal or 2) the “hardcoded” text of that day’s entry that the user had previously written.
   *	The user “taps” on the text box area to edit the text.
   *	A keyboard will rise up from the bottom and the previously “hardcoded” text box will change to a text box that the user can edit.
   *	The user will use basic texting tools to edit a journal entry.
-  *	Journal User will either press “save” to accept the changes or “cancel” to cancel the edits
-  *	If “save” is pressed, the journal entry object is updated with the new text
+  *	The Journal User will either press “save” to accept the changes or “cancel” to cancel the edits
+  *	If “save” is pressed, the journal entry object is updated with the new text and provided to the Back-End.
   *	The use case ends successfully.  The page reverts to the “hardcoded” text version where the new edits have been included, and user has ability to navigate throughout the app.  
 
 5.	**Alternative Flows** <br/>
 **5.1	Cancel**<br/>
-If in step 6 of the basic flow Journal User use case: user selects cancel.
-* The use case ends with no changes.  The page reverts to the “hardcoded” text version with no edits being included, and user has ability to navigate throughout the app.  
+If the Journal User selects cancel: The use case ends with no changes.  The page reverts to the “hardcoded” text version with no edits being included, and user has ability to navigate throughout the app.  
 
 **5.2	Navigate Back / Cancel Key** <br/>
 If at any point during the editing prior to a save, if the Journal User presses the cancel key, this will act the same as pressing “cancel” where no changes are updated and the Journal user is taken back to the day’s page.
@@ -113,6 +112,7 @@ The journal entry has been updated with new text or canceled.  That days journal
 8.	**Special Requirements** <br/>
 The basic display text box should expand for increasing amounts of text.
 
+<br/>
 ### Use-Case: Navigate to a Day’s Journal Page
 
 1.	**Brief Description** <br/>
@@ -122,19 +122,19 @@ This function allows a user to navigate to any given day’s journal page.
   **2.1	Journal User** <br/>
 
 3.	**Preconditions** <br/>
-The Journal User is logged and viewing the app in a “Calendar” view displaying a month of a year.  The default setting on app open takes user to current date.  
+The Journal User is logged in and viewing the app in a “Calendar” view displaying a month of a year.  The default setting on opening the app takes the Journal User to the current date.  
 
-4.	**Basic Flow of Events** <br/>
+4.	**Basic Flow of Events**
   * Within the calendar view the user can navigate to a specific month within a specific year by scrolling up or down a calendar display.
-  *	When the Journal User gets to a day where they want to view a specific day’s journal, they will click on that date that will navigate to a new screen with that day’s journal entry.
-  *	Within a specific day’s journal page, the user can edit the journal page, return to the calendar view, or navigate to the proceeding or following day’s journal page by swiping left or right.
-  *	The use case ends successfully. The user arrives at the desired date of choice.  
+  *	When the Journal User gets to a day where they want to view a specific day’s journal page, they will click on that date and it will navigate to a new screen with that day’s journal entry.
+  *	Within a specific day’s journal page, the user can view / edit the journal page, return to the calendar view, or navigate to the proceeding or following day’s journal page by swiping left or right.
+  *	The use case ends successfully. The user arrives at the journal page of the desired date of choice.  
 
 5.	**Alternative Flows** <br/>
   **5.1	Choose a different view** <br/>
   The Journal User can select a different calendar view within the options tab
   **5.2	Scroll Calendar Beyond Range** <br/>
-  If at any point during the editing prior to a save, if the Journal User presses the cancel key, this will act the same as pressing “cancel” where no changes are updated and the Journal user is taken back to the day’s page.
+  The back-end capabilities will determine the range of the calendar dates.
 
 6.	**Key Scenarios** <br/>
   **6.1	Journal User navigates** <br/>
@@ -143,9 +143,13 @@ The Journal User is logged and viewing the app in a “Calendar” view displayi
 7.	**Post-conditions** <br/>
   **7.1	Successful Completion** <br/>
   The journal user can view a give day’s journal page in a layout that provides additional context to that day.  
+  
 8.	**Special Requirements** <br/>
   A range must be determined for dates. <br/>
-  Alternative calendar views
+  Alternative calendar views<br/>
+
+<br/>
+
 
 
 ## 7. User stories
