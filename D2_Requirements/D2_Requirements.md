@@ -6,7 +6,7 @@ Results of the requirements engineering for Journal Time.
 
 ### 1.1 Problem Statement
 
-The problem of Context and information loss affects everyone using technology; the impact of which causes people to miss remember and tell false stories.
+Our memories can be greatly enhanced by including more context and information within our personal journals.  Currently, adding information beyond written entries requires significant effort by the individual, and a simple journal misses out on so much content, data, and other available information that is available on a smartphone.  
 
 ### 1.2 Product Position Statement
 
@@ -14,7 +14,7 @@ For people who appreciate logging experiences from their day, Capture is a journ
 
 ### 1.3 Value Proposition
 
-Journal Time is a diary app that allows users to create detailed journal entries and provides an enhanced journaling experience through the ability to use multiple forms of context. These forms of context include but are not limited to the ability to integrate images, news stories and locations. 
+Journaling and diary keeping has long been used to preserve memories and recall the past.  Journal Time is mobile app that helps users create enhanced personal journal entries that better capture and preserve their most important memories.  Journal Time allows users to add customized information, such as photos, social media posts, and news stories, from their smartphone or from their internet accounts to their daily journal entries.  This information is then organized in an attractive digital layout that can be utilized and shared in different manners.  
 
 ## 2. Stakeholders
 
@@ -163,6 +163,13 @@ The Journal User is logged in and viewing the app in a “Calendar” view displ
 2. As a journal taker, I want this app to allow easy photo integration.
 
 3. As a journal taker, I want this app to allow me to share my journals with my friends and family.
+
+4. As a Journal User I want to be able to login to my account from other devices so that I can access my entries and create new ones.
+
+5. As a user I want each journal page to highlight places that I visited that day so that I can recall events that I might not otherwise journal about.
+
+6. As a user I want each journal page to highlight key news stories of the day so that I can recall world events that may have influenced my day. 
+
 
 ## 8. Trello
 
