@@ -77,123 +77,158 @@ Lorem Ipsum
 
 ### Use-Case: Edit Journal Entry
 
-1.	**Brief Description** <br/>
-This function allows a user to edit (including a new entry) a journal entry for a
-specific day.
-
-2.	**Actors** <br/>
-**2.1	Journal User** <br/>
-**2.2	Back-end** <br/>
-
-3.	**Preconditions** <br/>
-The Journal User has navigated to a day page.
-
-4.	**Basic Flow of Events**
-  *  The use case begins when the Journal User selects a specific day's journal page.
-  *  The Journal user will see a small text box with either 1) no text if it is a previously unwritten journal or 2) the “hardcoded” text of that day’s entry that the user had previously written.
-  *	The user “taps” on the text box area to edit the text.
-  *	A keyboard will rise up from the bottom and the previously “hardcoded” text box will change to a text box that the user can edit.
-  *	The user will use basic texting tools to edit a journal entry.
-  *	The Journal User will either press “save” to accept the changes or “cancel” to cancel the edits
-  *	If “save” is pressed, the journal entry object is updated with the new text and provided to the Back-End.
-  *	The use case ends successfully.  The page reverts to the “hardcoded” text version where the new edits have been included, and user has ability to navigate throughout the app.  
-
-5.	**Alternative Flows** <br/>
-**5.1	Cancel**<br/>
-If the Journal User selects cancel: The use case ends with no changes.  The page reverts to the “hardcoded” text version with no edits being included, and user has ability to navigate throughout the app.  
-
-**5.2	Navigate Back / Cancel Key** <br/>
-If at any point during the editing prior to a save, if the Journal User presses the cancel key, this will act the same as pressing “cancel” where no changes are updated and the Journal user is taken back to the day’s page.
-
-6.	**Key Scenarios** <br/>
-**6.1	Journal User makes changes**<br/>
-**6.2	Journal User cancels changes**<br/>
-
-7.	**Post-conditions** <br/>
-**7.1	Successful Completion**<br/>
-The journal entry has been updated with new text or canceled.  That days journal entry reflect changes and can be viewed by the Journal User.
-
-8.	**Special Requirements** <br/>
-The basic display text box should expand for increasing amounts of text.
-
-<br/>
-### Use-Case: Navigate to a Day’s Journal Page
-
-1.	**Brief Description** <br/>
-This function allows a user to navigate to any given day’s journal page.
-
-2.	**Actors** <br/>
-  **2.1	Journal User** <br/>
-
-3.	**Preconditions** <br/>
-The Journal User is logged in and viewing the app in a “Calendar” view displaying a month of a year.  The default setting on opening the app takes the Journal User to the current date.  
-
-4.	**Basic Flow of Events**
-  * Within the calendar view the user can navigate to a specific month within a specific year by scrolling up or down a calendar display.
-  *	When the Journal User gets to a day where they want to view a specific day’s journal page, they will click on that date and it will navigate to a new screen with that day’s journal entry.
-  *	Within a specific day’s journal page, the user can view / edit the journal page, return to the calendar view, or navigate to the proceeding or following day’s journal page by swiping left or right.
-  *	The use case ends successfully. The user arrives at the journal page of the desired date of choice.  
-
-5.	**Alternative Flows** <br/>
-  **5.1	Choose a different view** <br/>
-  The Journal User can select a different calendar view within the options tab
-  **5.2	Scroll Calendar Beyond Range** <br/>
-  The back-end capabilities will determine the range of the calendar dates.
-
-6.	**Key Scenarios** <br/>
-  **6.1	Journal User navigates** <br/>
-  **6.2	Journal User can navigate back to calendar view or other days** <br/>
-
-7.	**Post-conditions** <br/>
-  **7.1	Successful Completion** <br/>
-  The journal user can view a give day’s journal page in a layout that provides additional context to that day.  
-
-8.	**Special Requirements** <br/>
-  A range must be determined for dates. <br/>
-  Alternative calendar views<br/>
-
-<br/>
-
-
-### Use Case: Share journal entry
-
-<<<<<<< HEAD
-
 1. **Brief Description**
-   This function allows a user to share a journal entry to peers.
 
-2. **Actors** 
+   This function allows a user to edit (including a new entry) a journal entry for a specific day.
+
+2. **Actors**
+
    **2.1 Journal User**
-   **2.2 Shared Peer**
-   **2.3 Back-end Server**
+
+   **2.2 Back-end**
 
 3. **Preconditions**
-   The journal user has created an entry and navigated to it.
+
+   The Journal User has navigated to a day page.
+
 4. **Basic Flow of Events**
 
-* Within the currently selected journal entry, the user selects the share button.
-
-* The share button brings up a menu for the user to select the recipient of the entry through text message or email.
+   * The use case begins when the Journal User selects a specific day's journal page.
   
-* Once selected, the entry is then exported to PDF and shared.
+   * The Journal user will see a small text box with either 1) no text if it is a previously unwritten journal or 2) the “hardcoded” text of that day’s entry that the user had previously written.
+
+   * The user “taps” on the text box area to edit the text.
+
+   * A keyboard will rise up from the bottom and the previously “hardcoded” text box will change to a text box that the user can edit.
+
+   * The user will use basic texting tools to edit a journal entry.
+
+   * The Journal User will either press “save” to accept the changes or “cancel” to cancel the edits
+
+   * If “save” is pressed, the journal entry object is updated with the new text and provided to the Back-End.
+
+   * The use case ends successfully.  The page reverts to the “hardcoded” text version where the new edits have been included, and user has ability to navigate throughout the app.  
 
 5. **Alternative Flows**
 
-**5.1 Journal user cancels share**
-The journal user can rescind the share.
+   **5.1 Cancel**
+
+   If the Journal User selects cancel: The use case ends with no changes.  The page reverts to the “hardcoded” text version with no edits being included, and user has ability to navigate throughout the app.  
+
+   **5.2 Navigate Back / Cancel Key**
+
+   If at any point during the editing prior to a save, if the Journal User presses the cancel key, this will act the same as pressing “cancel” where no changes are updated and the Journal user is taken back to the day’s page.
 
 6. **Key Scenarios**
-   **6.1 Journal user shares**
-   **6.2Journal user cancels share**
 
-7.	**Post Conditions**
-**7.1 Successful share**
+   **6.1 Journal User makes changes**
+
+   **6.2 Journal User cancels changes**
+
+7. **Post-conditions**
+
+   **7.1 Successful Completion**
+
+   The journal entry has been updated with new text or canceled.  That days journal entry reflect changes and can be viewed by the Journal User.
+
+   **Special Requirements**
+
+   The basic display text box should expand for increasing amounts of text.
+
+### Use-Case: Navigate to a Day’s Journal Page
+
+1. **Brief Description**
+This function allows a user to navigate to any given day’s journal page.
+
+2. **Actors**
+
+   **2.1 Journal User**
+
+3. **Preconditions**
+
+   The Journal User is logged in and viewing the app in a “Calendar” view displaying a month of a year.  The default setting on opening the app takes the Journal User to the current date.  
+
+4. **Basic Flow of Events**
+
+   * Within the calendar view the user can navigate to a specific month within a specific year by scrolling up or down a calendar display.
+
+   * When the Journal User gets to a day where they want to view a specific day’s journal page, they will click on that date and it will navigate to a new screen with that day’s journal entry.
+
+   * Within a specific day’s journal page, the user can view / edit the journal page, return to the calendar view, or navigate to the proceeding or following day’s journal page by swiping left or right.
+
+   * The use case ends successfully. The user arrives at the journal page of the desired date of choice.  
+
+5. **Alternative Flows**
+
+   **5.1 Choose a different view**
+
+   The Journal User can select a different calendar view within the options tab
+
+   **5.2 Scroll Calendar Beyond Range**
+
+   The back-end capabilities will determine the range of the calendar dates.
+
+6. **Key Scenarios**
+
+   **6.1 Journal User navigates**
+
+   **6.2 Journal User can navigate back to calendar view or other days**
+
+7. **Post-conditions**
+
+   **7.1 Successful Completion**
+
+   The journal user can view a give day’s journal page in a layout that provides additional context to that day.  
 
 8. **Special Requirements**
+
+   A range must be determined for dates.
+
+   Alternative calendar views
+
+### Use Case: Share journal entry
+
+1. **Brief Description**
+   This function allows a user to share a journal entry with their peers.
+
+2. **Actors**
+
+   **2.1 Journal User**
+
+   **2.2 Shared Peers**
+
+3. **Preconditions**
+
+   The journal user has created an entry and navigated to it.
+
+4. **Basic Flow of Events**
+
+   * Within the currently selected journal entry, the user selects the share button.
+
+   * The share button brings up a menu for the user to select the recipient of the entry through text message or email.
+  
+   * Once selected, the entry is then exported to PDF and shared.
+
+5. **Alternative Flows**
+
+   **5.1 Journal user cancels share**
+
+   The journal user can rescind the share.
+
+6. **Key Scenarios**
+
+   **6.1 Journal user shares**
+
+   **6.2 Journal user cancels share**
+
+7. **Post Conditions**
+  
+   **7.1 Successful share**
+
+8. **Special Requirements**
+
    The choice of shared contact should bring up the correct app for sharing
 
-=======
->>>>>>> a6de332ececda076408a2beb9bbee619a946c100
 ## 7. User stories
 
 1. As a Journal taker, I want this app to allow a customizable work space.
