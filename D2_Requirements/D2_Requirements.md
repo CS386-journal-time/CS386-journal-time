@@ -10,18 +10,19 @@ Our memories can be greatly enhanced by including more context and information w
 
 ### 1.2 Product Position Statement
 
-For people who appreciate logging experiences from their day, Capture is a journaling app that automatically integrates relevant information, such as photos into entries. Unlike other journaling and note-taking applications, Capture takes care of integrating information into journal entries for its users.
+For people who appreciate logging experiences from their day, Journal Time is a journaling app that automatically integrates relevant information, such as photos, into entries. Unlike other journaling and note-taking applications, Capture takes care of integrating information into journal entries for its users.
 
 ### 1.3 Value Proposition
 
-Journaling and diary keeping has long been used to preserve memories and recall the past.  Journal Time is mobile app that helps users create enhanced personal journal entries that better capture and preserve their most important memories.  Journal Time allows users to add customized information, such as photos, social media posts, and news stories, from their smartphone or from their internet accounts to their daily journal entries.  This information is then organized in an attractive digital layout that can be utilized and shared in different manners.  
+Journaling and diary keeping have long been used to preserve memories and recall the past.  Journal Time is mobile app that helps users create enhanced personal journal entries that better capture and preserve their most important memories.  Journal Time allows users to add customized information, such as photos, social media posts, and news stories, from their smartphone or from their internet accounts to their daily journal entries.  This information is then organized in an attractive digital layout that can be utilized and shared in different manners.  
 
 ## 2. Stakeholders
 
-* Those who journal - People downloading Capture in order to keep track of their lives and integrate relevant information into their entries.  We believe that there will be initial interest from those who wish to capture the most detail about their daily lives.
+* Those who journal - People downloading Journal Time in order to keep track of their lives and integrate relevant information into their entries.  We believe that there will be initial interest from those who wish to capture the most detail about their daily lives.
 
-* Journal app Developers - people who design and create the proper specifications for the journal app. they will also test and improve the app for those who use the journal app over time.
+* Journal app developers - People who design and create the proper specifications for the journal app. They will also test and improve the app for those who use the journal app over time.
 
+* Other journaling and note-taking apps - We will utilize features in similar note-taking apps, such as text boxes. These apps are considered stakeholders as they will be our competitors.
 
 ## 3. Functional Requirements (features)
 
@@ -31,11 +32,11 @@ Journaling and diary keeping has long been used to preserve memories and recall 
 
 3. Users can choose if they want different locations they visited throughout the day displayed on their journal.
 
-4. User may choose whether or not to pull relevant news articles into their journal.
+4. Users may choose whether or not to pull relevant news articles into their journal.
 
-5. User can choose a journal theme. (journal theme will include color and font)
+5. Users can choose a journal theme. (journal theme will include color and font)
 
-6. User may choose to share their journal with other people via email, text link or through the app.
+6. Users may choose to share their journal with other people via email, text link or through the app.
 
 7. Users can share their journal with others for group collaboration.
 
@@ -43,13 +44,13 @@ Journaling and diary keeping has long been used to preserve memories and recall 
 
 9. Users may choose to incorporate weather data into their journal.
 
-10. User can use their favorite streaming service to incorporate music in the journal.
+10. Users can use their favorite streaming service to incorporate music in the journal.
 
 11. Users can craft their journal entries with options other than text input. (stylus, voice, etc.).
 
 ## 4. Non-functional requirements
 
-1. Security (Secure storage of entries)
+1. Security (secure storage of entries)
 
 2. Ease of use (creating/editing entries)
 
@@ -65,17 +66,21 @@ Journaling and diary keeping has long been used to preserve memories and recall 
 
 ## 5. MVP
 
-To create our minimum viable product, we will begin with the basics of our app, photo and text input with a coherent and clean user interface.  Capture will be a no-frills journaling app with the ability to share entries in its first iteration.
+To create our minimum viable product, we will begin with the basics of our app, photo and text input.  Following that, a coherent and clean user interface will begin to form from our data received from beta testing and interviewing users.  The app will move through many iterations before we find an attractive and functional look.  Features wise, we will continue to conduct studies about what features potential users would like to see added to the app in the future.  As we learn from these studies, the app will morph in the direction of what the the user base would like to see.
 
 ## 6. Use cases
 
 ### 6.1 Use case diagram
 
-![Journal Time Use Case Diagram](jappUse.png)
+![Journal Time Use Case Diagram](img/jappUse.png)
 
 ### 6.2 Use case descriptions
 
 ### Use-Case: Edit Journal Entry
+
+![Journal Time Use Case Diagram](img/UseCaseDiagram_Edit.png)
+
+![Journal Time Use Case Diagram](img/UseCaseExample_Edit.png)
 
 1. **Brief Description**
 
@@ -89,13 +94,13 @@ To create our minimum viable product, we will begin with the basics of our app, 
 
 3. **Preconditions**
 
-   The Journal User has navigated to a day page.
+   The journal user has navigated to a day page.
 
 4. **Basic Flow of Events**
 
    * The use case begins when the Journal User selects a specific day's journal page.
   
-   * The Journal user will see a small text box with either 1) no text if it is a previously unwritten journal or 2) the “hardcoded” text of that day’s entry that the user had previously written.
+   * The journal user will see a small text box with either 1) no text if it is a previously unwritten journal or 2) the “hardcoded” text of that day’s entry that the user had previously written.
 
    * The user “taps” on the text box area to edit the text.
 
@@ -136,6 +141,10 @@ To create our minimum viable product, we will begin with the basics of our app, 
    The basic display text box should expand for increasing amounts of text.
 
 ### Use-Case: Navigate to a Day’s Journal Page
+
+![Journal Time Use Case Diagram](img/UseCaseDiagram_Navigate.png)
+
+![Journal Time Use Case Diagram](img/UseCaseExample_Navigate.png)
 
 1. **Brief Description**
 This function allows a user to navigate to any given day’s journal page.
@@ -231,18 +240,27 @@ This function allows a user to navigate to any given day’s journal page.
 
 ## 7. User stories
 
-  + As a Journal Taker I want to create a new Journal Page to organize my thoughts and notes.
-  + As a Journal Taker I want to modify an existing Journal Page to expand it or make corrections.
-  + As a Journal Taker I want to Upload images to a Journal Page to provide context to my notes.
-  + As a Journal Taker I want to link a calender day to a Journal Page to add context to my notes.
-  + As a Guest I want to view a Journal page that was shared with me to respond to the sharer.
-  + As a Journal Taker I want to customize my workspace so my Journal pages can be personalized.
-  + As a Journal taker, I want to share my journals with my friends and family to include them in my activities.
-  + As a Journal User I want to be able to login to my account from other devices so that I can access my entries and create new ones.
-  + As a Journal Taker I want each journal page to highlight places that I visited that day so that I can recall events that I might not otherwise journal about.
-  + As a Journal Taker I want each journal page to highlight key news stories of the day so that I can recall world events that may have influenced my day.
-  + As a Journal Taker I want to save my Journal Pages so I can review them later.
+* As a Journal Taker, I want to create a new Journal Page to organize my thoughts and notes.
 
+* As a Journal Taker, I want to modify an existing Journal Page to expand it or make corrections.
+
+* As a Journal Taker, I want to Upload images to a Journal Page to provide context to my notes.
+
+* As a Journal Taker, I want to link a calender day to a Journal Page to add context to my notes.
+
+* As a Guest, I want to view a Journal page that was shared with me to respond to the sharer.
+
+* As a Journal Taker, I want to customize my workspace so my Journal pages can be personalized.
+
+* As a Journal taker, I want to share my journals with my friends and family to include them in my activities.
+
+* As a Journal User, I want to be able to login to my account from other devices so that I can access my entries and create new ones.
+
+* As a Journal Taker, I want each journal page to highlight places that I visited that day so that I can recall events that I might not otherwise journal about.
+
+* As a Journal Taker, I want each journal page to highlight key news stories of the day so that I can recall world events that may have influenced my day.
+
+* As a Journal Taker, I want to save my Journal Pages so I can review them later.
 
 ## 8. Trello
 
