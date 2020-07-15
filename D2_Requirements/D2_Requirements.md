@@ -22,6 +22,8 @@ Journal Time is a diary app that allows users to create detailed journal entries
 
 * Journal app Developers - people who design and create the proper specifications for the journal app. they will also test and improve the app for those who use the journal app over time.
 
+* Other journaling and note taking apps - We will utilize features in similar note taking apps, such as text boxes. These apps are considered stakeholders as they will be our competitors.
+
 
 ## 3. Functional Requirements (features)
 
@@ -148,6 +150,7 @@ The Journal User is logged in and viewing the app in a “Calendar” view displ
   Alternative calendar views<br/>
 
 <br/>
+
 
 
 
