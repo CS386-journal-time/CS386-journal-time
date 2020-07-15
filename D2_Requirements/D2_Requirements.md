@@ -6,7 +6,7 @@ Results of the requirements engineering for Journal Time.
 
 ### 1.1 Problem Statement
 
-The problem of Context and information loss affects everyone using technology; the impact of which causes people to miss remember and tell false stories.
+Our memories can be greatly enhanced by including more context and information within our personal journals.  Currently, adding information beyond written entries requires significant effort by the individual, and a simple journal misses out on so much content, data, and other available information that is available on a smartphone.  
 
 ### 1.2 Product Position Statement
 
@@ -14,7 +14,7 @@ For people who appreciate logging experiences from their day, Capture is a journ
 
 ### 1.3 Value Proposition
 
-Journal Time is a diary app that allows users to create detailed journal entries and provides an enhanced journaling experience through the ability to use multiple forms of context.
+Journaling and diary keeping has long been used to preserve memories and recall the past.  Journal Time is mobile app that helps users create enhanced personal journal entries that better capture and preserve their most important memories.  Journal Time allows users to add customized information, such as photos, social media posts, and news stories, from their smartphone or from their internet accounts to their daily journal entries.  This information is then organized in an attractive digital layout that can be utilized and shared in different manners.  
 
 ## 2. Stakeholders
 
@@ -71,7 +71,7 @@ To create our minimum viable product, we will begin with the basics of our app, 
 
 ### 6.1 Use case diagram
 
-Lorem Ipsum
+![Journal Time Use Case Diagram](jappUse.png)
 
 ### 6.2 Use case descriptions
 
@@ -231,11 +231,18 @@ This function allows a user to navigate to any given day’s journal page.
 
 ## 7. User stories
 
-1. As a Journal taker, I want this app to allow a customizable work space.
+  + As a Journal Taker I want to create a new Journal Page to organize my thoughts and notes.
+  + As a Journal Taker I want to modify an existing Journal Page to expand it or make corrections.
+  + As a Journal Taker I want to Upload images to a Journal Page to provide context to my notes.
+  + As a Journal Taker I want to link a calender day to a Journal Page to add context to my notes.
+  + As a Guest I want to view a Journal page that was shared with me to respond to the sharer.
+  + As a Journal Taker I want to customize my workspace so my Journal pages can be personalized.
+  + As a Journal taker, I want to share my journals with my friends and family to include them in my activities.
+  + As a Journal User I want to be able to login to my account from other devices so that I can access my entries and create new ones.
+  + As a Journal Taker I want each journal page to highlight places that I visited that day so that I can recall events that I might not otherwise journal about.
+  + As a Journal Taker I want each journal page to highlight key news stories of the day so that I can recall world events that may have influenced my day.
+  + As a Journal Taker I want to save my Journal Pages so I can review them later.
 
-2. As a journal taker, I want this app to allow easy photo integration.
-
-3. As a journal taker, I want this app to allow me to share my journals with my friends and family.
 
 ## 8. Trello
 
