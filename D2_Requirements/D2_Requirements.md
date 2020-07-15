@@ -152,7 +152,41 @@ The Journal User is logged in and viewing the app in a “Calendar” view displ
 <br/>
 
 
+### Use Case: Share journal entry
 
+
+1. **Brief Description**
+   This function allows a user to share a journal entry to peers.
+
+2. **Actors** 
+   **2.1 Journal User**
+   **2.2 Shared Peer**
+   **2.3 Back-end Server**
+
+3. **Preconditions**
+   The journal user has created an entry and navigated to it.
+4. **Basic Flow of Events**
+
+* Within the currently selected journal entry, the user selects the share button.
+
+* The share button brings up a menu for the user to select the recipient of the entry through text message or email.
+  
+* Once selected, the entry is then exported to PDF and shared.
+
+5. **Alternative Flows**
+
+**5.1 Journal user cancels share**
+The journal user can rescind the share.
+
+6. **Key Scenarios**
+   **6.1 Journal user shares**
+   **6.2Journal user cancels share**
+
+7.	**Post Conditions**
+**7.1 Successful share**
+
+8. **Special Requirements**
+   The choice of shared contact should bring up the correct app for sharing
 
 ## 7. User stories
 
