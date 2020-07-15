@@ -14,7 +14,7 @@ For people who appreciate logging experiences from their day, Capture is a journ
 
 ### 1.3 Value Proposition
 
-Journal Time is a diary app that allows users to create detailed journal entries and provides an enhanced journaling experience through the ability to use multiple forms of context.
+Journal Time is a diary app that allows users to create detailed journal entries and provides an enhanced journaling experience through the ability to use multiple forms of context. These forms of context include but are not limited to the ability to integrate images, news stories and locations. 
 
 ## 2. Stakeholders
 
