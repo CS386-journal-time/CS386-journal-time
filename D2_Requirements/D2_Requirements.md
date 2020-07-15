@@ -173,4 +173,4 @@ The Journal User is logged in and viewing the app in a “Calendar” view displ
 
 ## 8. Trello
 
-Lorem Ipsum
+[Journal Time Trello](https://trello.com/b/ckpVrn78/team3-journal-time)
