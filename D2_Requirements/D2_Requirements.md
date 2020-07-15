@@ -78,9 +78,9 @@ To create our minimum viable product, we will begin with the basics of our app, 
 
 ### Use-Case: Edit Journal Entry
 
-![Journal Time Edit Use Case Diagram](./img/UseCaseDiagram_Edit.png)
+![Journal Time Edit Use Case Diagram](./img/UseCaseDiagram_Edit.PNG)
 
-![Journal Time Edit Use Case Example](./img/UseCaseExample_Edit.png)
+![Journal Time Edit Use Case Example](./img/UseCaseExample_Edit.PNG)
 
 1. **Brief Description**
 
@@ -142,7 +142,7 @@ To create our minimum viable product, we will begin with the basics of our app, 
 
 ### Use-Case: Navigate to a Day’s Journal Page
 
-![Journal Time Navigate Use Case Diagram](./img/UseCaseDiagram_Navigate.png)
+![Journal Time Navigate Use Case Diagram](./img/UseCaseDiagram_Navigate.PNG)
 
 ![Journal Time Navigate Use Case Example](./img/UseCaseExample_Navigate.PNG)
 
