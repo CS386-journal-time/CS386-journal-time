@@ -10,7 +10,7 @@ The problem of Context and information loss affects everyone using technology; t
 
 ### 1.2 Product Position Statement
 
-For people who appreciate logging experiences from they day, Capture is a journaling app that automatically integrates relevant information, such as photos into entries. Unlike other journaling and note-taking applications, Capture takes care of integrating information into journal entries for its users.
+For people who appreciate logging experiences from their day, Capture is a journaling app that automatically integrates relevant information, such as photos into entries. Unlike other journaling and note-taking applications, Capture takes care of integrating information into journal entries for its users.
 
 ### 1.3 Value Proposition
 
@@ -21,8 +21,6 @@ Journal Time is a diary app that allows users to create detailed journal entries
 * Those who journal - People downloading Capture in order to keep track of their lives and integrate relevant information into their entries.  We believe that there will be initial interest from those who wish to capture the most detail about their daily lives.
 
 * Journal app Developers - people who design and create the proper specifications for the journal app. they will also test and improve the app for those who use the journal app over time.
-
-* Other journaling and note taking apps - We will utilize features in similar note taking apps, such as text boxes. These apps are considered stakeholders as they will be our competitors.
 
 
 ## 3. Functional Requirements (features)
@@ -60,6 +58,10 @@ Journal Time is a diary app that allows users to create detailed journal entries
 4. Portability (multiple device sharing)
 
 5. Performance (ability to load journal entries within seconds)
+
+6. Maintainability (easy to test and fix)
+
+7. Effectiveness (will increase the retention of context and information)
 
 ## 5. MVP
 
@@ -112,8 +114,9 @@ If at any point during the editing prior to a save, if the Journal User presses 
 The journal entry has been updated with new text or canceled.  That days journal entry reflect changes and can be viewed by the Journal User.
 
 8.	**Special Requirements** <br/>
-The basic display text box should expand for increasing amounts of text. <br/>
+The basic display text box should expand for increasing amounts of text.
 
+<br/>
 ### Use-Case: Navigate to a Day’s Journal Page
 
 1.	**Brief Description** <br/>
@@ -154,6 +157,7 @@ The Journal User is logged in and viewing the app in a “Calendar” view displ
 
 ### Use Case: Share journal entry
 
+<<<<<<< HEAD
 
 1. **Brief Description**
    This function allows a user to share a journal entry to peers.
@@ -188,9 +192,15 @@ The journal user can rescind the share.
 8. **Special Requirements**
    The choice of shared contact should bring up the correct app for sharing
 
+=======
+>>>>>>> a6de332ececda076408a2beb9bbee619a946c100
 ## 7. User stories
 
-Lorem Ipsum
+1. As a Journal taker, I want this app to allow a customizable work space.
+
+2. As a journal taker, I want this app to allow easy photo integration.
+
+3. As a journal taker, I want this app to allow me to share my journals with my friends and family.
 
 ## 8. Trello
 
