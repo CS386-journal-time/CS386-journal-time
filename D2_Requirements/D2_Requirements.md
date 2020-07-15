@@ -71,7 +71,7 @@ To create our minimum viable product, we will begin with the basics of our app, 
 
 ### 6.1 Use case diagram
 
-Lorem Ipsum
+![Journal Time Use Case Diagram](jappUse.png)
 
 ### 6.2 Use case descriptions
 
