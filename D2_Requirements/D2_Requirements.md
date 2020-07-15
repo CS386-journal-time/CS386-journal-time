@@ -264,4 +264,4 @@ This function allows a user to navigate to any given day’s journal page.
 
 ## 8. Trello
 
-Lorem Ipsum
+[Journal Time Trello](https://trello.com/b/ckpVrn78/team3-journal-time)
