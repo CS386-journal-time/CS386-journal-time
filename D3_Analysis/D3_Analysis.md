@@ -16,13 +16,13 @@ The key requirements for Journal Time begin with the need for a **calendar displ
 
 **Calendar**: A Calendar class displays the days and is essential for User navigation to different Days so they can to create, edit, or view a journal entry.
 
-**Day**: A Day represents an actual day and corresponds to a journal entry for that specific day. Days will be the primary manner in which we organize the journal entries.
+**Day**: A Day represents an actual day and corresponds to a journal entry for that specific day which is represented in the calendar. Days will be the primary manner in which we organize the journal entries.
 
 **User**: A User class represents the specific user of the app and is necessary from a login and permission perspective so that their journal entries can be updated, saved, and kept secure.
 
-**Share**: The Share class supports the users ability to share journal entries by defining what will be shared.
+**Share**: The Share class supports the users ability to share journal entries by defining what will be shared and the manner in which it will be shared.
 
-**ShareType**: ShareType indicates the manner in which the user plans to share a journal entry.  For example: email or text message.
+**ShareType**: ShareType indicates the manner in which the user plans to share a journal entry. For example: email or text message. This will be the external application that needs to run for sharing.
 
 **JournalEntry**: The class for each specific Journal Entry. The JournalEntry will be aligned to a specific Day and will contain and help display other objects such as a TextBox and Photo objects.
 
@@ -30,6 +30,6 @@ The key requirements for Journal Time begin with the need for a **calendar displ
 
 **TextBox**: Text objects used within the JournalEntry. This is essential as it is the basis of a journal entry, where users will type in the journals content.
 
-**Photo**: A photo that would be included in the Journal Entry.  
+**Photo**: A photo that will be included in the Journal Entry. 
 
 **Location**: Location objects will keep track of specific longitude and latitude coordinates that can be used to map the users location at the time that each entry is written.  
