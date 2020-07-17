@@ -14,4 +14,22 @@ Lorem Ipsum
 
 ## 3. Class Responsibilities
 
-Lorem Ipsum
+**Calendar**: A Calendar class displays the days and is essential for User navigation to different Days so they can to create, edit, or view a journal entry.
+
+**Day**: A Day represents an actual day and corresponds to a journal entry for that specific day.  Day will be the primary manner in which we organize the journal entries.
+
+**User**: A User class represents the specific user of the app and is necessary from a login and permission perspective so that their journal entries can be updated and saved.
+
+**Share**: The Share class support the users ability to share journal entries by defining what will be shared.
+
+**ShareType**: ShareType indicates the manner in which the user plans to share a journal entry.  For example: email or text message.  A
+
+**JounrnalEntry**: The class for each specific Journal Entry.  The JounralEntry will be aligned to a specific Day and will contain and help display other objects such as a TextBox and Photo objects.
+
+**Event**: Indicates a class that describes specific events during a day such as a birthday, holiday, or activity.
+
+**TextBox**: Text objects used within the JournalEntry.  This is essential as it is the basis of a journal entry.
+
+**Photo**: a photo that would be included in the Journal Entry.  
+
+**Location**: Location objects will keep track of specific longitude and latitude coordinates that can be used to map the users location.  
