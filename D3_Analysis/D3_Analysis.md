@@ -10,7 +10,7 @@ The key requirements for Journal Time begin with the need for a **calendar displ
 
 ## 2. Model
 
-Lorem Ipsum
+![Journal Time Use Case Diagram](./img/D3_model)
 
 ## 3. Class Responsibilities
 
