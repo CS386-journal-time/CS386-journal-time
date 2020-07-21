@@ -19,6 +19,16 @@ class _Photo extends State<Photo> {
     });
   }
 
+  Widget pickedImage(
+      return Scaffold(
+        color: Colors.grey,
+        padding: EdgeInsets.all(60),
+        child: _image == null
+        ? Text('Tap to select an image.')
+          : Image.file(_image),
+  );
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
