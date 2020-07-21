@@ -3,7 +3,12 @@
 
 ## 1. Introduction
 
-Lorum Ipsum
+Journal Time is a mobile application that allows users to write personalized journal entries. Journal Time helps users create enhanced personal journal entries that better capture and preserve their most important memories unlike any other journaling or note-taking app, allowing its users to add customized information like photos locations, and news stories.
+
+With Journal Time, users can create journal entries by going into a calendar and selecting their desired day to journal. From here, the journal-taker uses a text box to type in their entry, customize the text color and font for their entry, enter photos from their camera roll, and list their location at the time of writing.
+
+GitHub: https://github.com/CS386-journal-time
+Trello: https://trello.com/b/ckpVrn78/team3-journal-time
 
 ## 2. Implemented requirements
 
