@@ -23,7 +23,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   google_maps_in_flutter: ^0.5.28+1
+  image_picker: ^0.6.7+4
+  font_awesome_flutter: ^8.8.1
 
   table_calendar: ^2.2.3
 

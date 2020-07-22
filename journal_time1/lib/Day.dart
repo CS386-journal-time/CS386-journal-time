@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'JounralEntry.dart';
 import 'main.dart';
+import 'JournalEntry.dart';
+import 'dart:io';
+
 
 class Day extends StatelessWidget {
   final DateTime choiceDay;
   String journalText;
+
+  File image;
 
   Day({this.choiceDay, this.journalText});
 
