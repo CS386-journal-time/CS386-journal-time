@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'package:journal_time1/customColor.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 import 'Day.dart';
@@ -10,20 +8,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-
-
-  final MaterialColor appColor;
-  MyApp({Key key, this.appColor}) : super (key: key);
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Calendar',
       theme: ThemeData(
-
-        primarySwatch: appColor,
-
         primarySwatch: Colors.blueGrey,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
@@ -33,9 +23,6 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatefulWidget {
-
-  final Color appColor;
-  HomePage({Key key, this.appColor}) : super (key: key);
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -43,9 +30,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   CalendarController _controller;
   DateTime choiceDay;
-
-  Color appColor;
-
 
   void displayChoiceDay() {
     print(choiceDay);
@@ -67,12 +51,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
-        title: Center(
-          child: Text('Journal Time'),
-        ),
-        backgroundColor: widget.appColor,
-
         title: Center(child: Text('Journal Time')),
       ),
       body: SingleChildScrollView(
@@ -117,35 +95,6 @@ class _HomePageState extends State<HomePage> {
               height: 20,
             ),
             Center(
-
-              child: Column(
-                children: <Widget>[
-                  RaisedButton(
-                    onPressed: () {
-                         Route route = MaterialPageRoute(
-                      builder: (context) => Day(choiceDay: choiceDay),
-                                   );
-                      Navigator.push(context, route);
-                              },
-                          child: Text('Go to Journal'),
-                  ),
-                  RaisedButton(
-                    onPressed: () {
-                      Route route = MaterialPageRoute(
-                        builder: (context) => customColor(),
-                      );
-                      Navigator.push(context, route);
-                    },
-                    child: Text('Customize'),
-                  ),
-                ],
-            ),
-            ),
-            ],
-        ),
-        ),
-      );
-
               child: RaisedButton(
                 onPressed: () {
                   Route route = MaterialPageRoute(

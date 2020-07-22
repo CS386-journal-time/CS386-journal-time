@@ -1,23 +1,13 @@
 import 'package:flutter/material.dart';
+import 'Day.dart';
 import 'package:intl/intl.dart';
-import 'JournalEntry.dart';
-import 'main.dart';
-import 'dart:io';
 
-
-class Day extends StatelessWidget {
-  final DateTime choiceDay;
+class JournalEntry extends StatelessWidget {
+  DateTime choiceDay;
   String journalText;
-  File image;
+  final myController = TextEditingController();
 
-  Day({this.choiceDay, this.journalText});
-
-  String checkJournalText() {
-    if (journalText == null) {
-      journalText = 'Enter your thoughts...';
-    }
-    return journalText;
-  }
+  JournalEntry({this.choiceDay, this.journalText});
 
   String formatDate() {
     DateFormat formatter = DateFormat('LLLL d, y');
@@ -25,22 +15,34 @@ class Day extends StatelessWidget {
     return '$formatted';
   }
 
+  void dispose() {
+    myController.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
+    final int maxLine = 30;
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        title: Center(
-          child: Text(formatDate()),
-        ),
+        title: Text(formatDate()),
       ),
-      body: ListView(
+      body: Column(
         children: <Widget>[
           SizedBox(
             height: 20,
           ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Text(checkJournalText()),
+          Container(
+            height: maxLine * 8.0,
+            child: TextField(
+              controller: myController,
+              keyboardType: TextInputType.multiline,
+              maxLines: maxLine,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Journal Time',
+              ),
+            ),
           ),
           SizedBox(
             height: 20,
@@ -52,25 +54,23 @@ class Day extends StatelessWidget {
               ),
               RaisedButton(
                 onPressed: () {
-                  Route route = MaterialPageRoute(
-                    builder: (context) => HomePage(),
-                  );
-                  Navigator.push(context, route);
+                  Navigator.pop(context);
                 },
-                child: Text('Return to Calendar'),
+                child: Text('Return to Journal Page'),
               ),
               SizedBox(
                 width: 20,
               ),
               RaisedButton(
                 onPressed: () {
+                  print(journalText);
                   Route route = MaterialPageRoute(
-                    builder: (context) => JournalEntry(
-                        choiceDay: choiceDay, journalText: journalText),
+                    builder: (context) => Day(
+                        choiceDay: choiceDay, journalText: myController.text),
                   );
                   Navigator.push(context, route);
                 },
-                child: Text('Edit Journal'),
+                child: Text('Save Entry'),
               ),
             ],
           ),
