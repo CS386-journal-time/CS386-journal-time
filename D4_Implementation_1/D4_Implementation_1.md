@@ -8,6 +8,7 @@ Journal Time is a mobile application that allows users to write personalized jou
 With Journal Time, users can create journal entries by going into a calendar and selecting their desired day to journal. From here, the journal-taker uses a text box to type in their entry, customize the text color and font for their entry, enter photos from their camera roll, and list their location at the time of writing.
 
 GitHub: https://github.com/CS386-journal-time
+
 Trello: https://trello.com/b/ckpVrn78/team3-journal-time
 
 ## 2. Implemented requirements
@@ -17,6 +18,8 @@ Trello: https://trello.com/b/ckpVrn78/team3-journal-time
 * **Basic Navigation**
 
 * **Basic Text Box for a Journal Entry**
+
+* **Basic Image Inclusion** 
 
 ## 3. Adopted technologies
 
