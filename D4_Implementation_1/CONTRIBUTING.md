@@ -7,3 +7,6 @@ Please note we have a code of conduct, please follow it in all your interactions
 ## Pull Request Process
 
 While the project remains in the early stages of development, please contact one of the team members if you would like to do a pull request.  More guidance will be offered in the near future as the Application is developed.
+
+Contributing template was provided by PurpleBooth - Good-CONTRIBUTING.md-template.md
+https://gist.github.com/PurpleBooth/b24679402957c63ec426

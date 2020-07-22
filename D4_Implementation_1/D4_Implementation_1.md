@@ -32,7 +32,7 @@ We have made prototype developments of the following features that show basic fu
 
 **Flutter SDK with Dart programming language on Android Studio platform.**  Flutter / Dart was developed to allow the creation of mobile apps that work on both Android and iOS with limited to no customization required.  Flutter was the obvious choice for the SDK from a technical perspective and several team members had experience with Android Studio.
 
-**Flutter Packages** table_calendar and image_picker have been implemented to support Calendar and Photo operations
+**Flutter Packages** table_calendar, flutter_hsvcolor_picker, and image_picker have been implemented to support Calendar and Photo operations
 
 **Google API** Used to help identify Map location (in-development)
 
@@ -69,7 +69,7 @@ READ_ME.md file added along with CODE_OF_CONDUCT.md, CONTRIBUTING.md, and LICENS
 
 ## 8. Look & feel
 
-Lorum Ipsum
+For Implementation 1, we decided to keep things clean from UI perspective, focus on functionality, and lay the foundation for customization.  Much of the display is based on the design of Flutter and the use of different Widgets and Packages to build the app display.  The calendar display is provided by table_calendar and has been well designed for mobile application use. The team wants to ensure that the user can customize their journal, and we feel that themes and colors are an important component of that.  We added the ability to to customize the color with a cool package called flutter_hsvcolor_picker.
 
 ## 9. Lessons learned
 
