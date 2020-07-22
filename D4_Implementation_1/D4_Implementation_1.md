@@ -12,11 +12,13 @@ Trello: https://trello.com/b/ckpVrn78/team3-journal-time
 
 ## 2. Implemented requirements
 
-* **Calendar Display** using the table_calendar package 
+* **Calendar Display** using the table_calendar package
 
 * **Basic Navigation**
 
-* **Basic Text Box for a Journal Entry**
+* **Text Box for a Journal Entry**
+
+* **Ability to select a photo from the smartphone**
 
 ## 3. Adopted technologies
 
@@ -24,9 +26,11 @@ Trello: https://trello.com/b/ckpVrn78/team3-journal-time
 
 **Mobile Device Standards** Our primary testing will be done on a Nexus 6 virtual device.  However, with the nature of Flutter, we will also be doing secondary testing on other virtual devices and physical devices including at least one Android tablet.
 
-**AWS**
+**AWS** Linux Server with Docker Image of Firebase
 
 **Backend**
+
+**Docker**
 
 ## 4. Learning/training
 
@@ -50,7 +54,7 @@ Lorum Ipsum
 
 ## 9. Lessons learned
 
-Lorum Ipsum
+One of the biggest challenges of this deliverable is the pace at which we 
 
 ## 10. Demo
 
