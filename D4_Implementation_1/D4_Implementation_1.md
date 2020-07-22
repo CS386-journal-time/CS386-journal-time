@@ -81,4 +81,4 @@ One of the biggest challenges of this deliverable is the pace at which we had to
 
 ## 10. Demo
 
-Lorum Ipsum
+![Journal Time App Demo](./img/app_demo.wmv)
