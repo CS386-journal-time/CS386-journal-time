@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:journal_time1/customColor.dart';
 import 'package:table_calendar/table_calendar.dart';
 
@@ -24,7 +23,6 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: appColor,
 
-        primarySwatch: Colors.blueGrey,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
@@ -67,13 +65,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
         title: Center(
-          child: Text('Journal Time'),
+           child: Text('Journal Time'),
         ),
         backgroundColor: widget.appColor,
-
-        title: Center(child: Text('Journal Time')),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -83,7 +78,9 @@ class _HomePageState extends State<HomePage> {
               initialCalendarFormat: CalendarFormat.month,
               calendarStyle: CalendarStyle(
                   todayColor: Colors.orange[400],
-                  selectedColor: Theme.of(context).primaryColor,
+                  selectedColor: Theme
+                      .of(context)
+                      .primaryColor,
                   todayStyle: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
@@ -93,17 +90,20 @@ class _HomePageState extends State<HomePage> {
               ),
               startingDayOfWeek: StartingDayOfWeek.sunday,
               builders: CalendarBuilders(
-                selectedDayBuilder: (context, date, events) => Container(
-                  margin: const EdgeInsets.all(4.0),
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                      color: Theme.of(context).primaryColor,
-                      borderRadius: BorderRadius.circular(10.0)),
-                  child: Text(
-                    date.day.toString(),
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
+                selectedDayBuilder: (context, date, events) =>
+                    Container(
+                      margin: const EdgeInsets.all(4.0),
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          color: Theme
+                              .of(context)
+                              .primaryColor,
+                          borderRadius: BorderRadius.circular(10.0)),
+                      child: Text(
+                        date.day.toString(),
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
               ),
               onCalendarCreated: (date, now, month) {
                 choiceDay = DateTime.now();
@@ -122,12 +122,12 @@ class _HomePageState extends State<HomePage> {
                 children: <Widget>[
                   RaisedButton(
                     onPressed: () {
-                         Route route = MaterialPageRoute(
-                      builder: (context) => Day(choiceDay: choiceDay),
-                                   );
+                      Route route = MaterialPageRoute(
+                        builder: (context) => Day(choiceDay: choiceDay),
+                      );
                       Navigator.push(context, route);
-                              },
-                          child: Text('Go to Journal'),
+                    },
+                    child: Text('Go to Journal'),
                   ),
                   RaisedButton(
                     onPressed: () {
@@ -139,21 +139,6 @@ class _HomePageState extends State<HomePage> {
                     child: Text('Customize'),
                   ),
                 ],
-            ),
-            ),
-            ],
-        ),
-        ),
-      );
-
-              child: RaisedButton(
-                onPressed: () {
-                  Route route = MaterialPageRoute(
-                    builder: (context) => Day(choiceDay: choiceDay),
-                  );
-                  Navigator.push(context, route);
-                },
-                child: Text('Go to Journal'),
               ),
             ),
           ],

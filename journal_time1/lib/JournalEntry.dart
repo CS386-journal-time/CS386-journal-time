@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'Day.dart';
 import 'package:intl/intl.dart';
-import 'Photo.dart';
 import 'dart:io';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:intl/intl.dart';
 import 'package:image_picker/image_picker.dart';
 
 
@@ -27,27 +25,22 @@ class JournalEntry extends StatelessWidget {
     myController.dispose();
   }
 
-
-  @override
-  Widget build(BuildContext context) {
-    final int maxLine = 30;
-    
-  Widget textBox() {
-    final int maxLine = 30;
-    return Container(
-      padding: EdgeInsets.fromLTRB(10, 20, 10, 10),
-      height: maxLine * 8.0,
-      child: TextField(
-        controller: myController,
-        keyboardType: TextInputType.multiline,
-        maxLines: maxLine,
-        decoration: InputDecoration(
-          border: OutlineInputBorder(),
-          labelText: 'Journal Time',
+    Widget textBox() {
+      final int maxLine = 30;
+      return Container(
+        padding: EdgeInsets.fromLTRB(10, 20, 10, 10),
+        height: maxLine * 8.0,
+        child: TextField(
+          controller: myController,
+          keyboardType: TextInputType.multiline,
+          maxLines: maxLine,
+          decoration: InputDecoration(
+            border: OutlineInputBorder(),
+            labelText: 'Journal Time',
+          ),
         ),
-      ),
-    );
-  }
+      );
+    }
 
   @override
   Widget build(BuildContext context) {
@@ -58,70 +51,6 @@ class JournalEntry extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
-         
-          SizedBox(
-            height: 20,
-          ),
-          Row(
-            children: <Widget>[
-              RaisedButton(
-                onPressed: () {
-                  Route route = MaterialPageRoute(
-                      builder: (context) => Photo()
-                  );
-                  Navigator.push(context, route);
-                },
-                child: Text('Add Image'),
-              ),
-            ],
-          ),
-          Container(
-            height: maxLine * 8.0,
-            child: TextField(
-              controller: myController,
-              keyboardType: TextInputType.multiline,
-              maxLines: maxLine,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Journal Time',
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Row(
-            children: <Widget>[
-              SizedBox(
-                width: 20,
-              ),
-              RaisedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: Text('Return to Journal Page'),
-              ),
-              SizedBox(
-                width: 20,
-              ),
-              RaisedButton(
-                onPressed: () {
-                  print(journalText);
-                  Route route = MaterialPageRoute(
-                    builder: (context) => Day(
-                        choiceDay: choiceDay, journalText: myController.text),
-                  );
-                  Navigator.push(context, route);
-                },
-                child: Text('Save Entry'),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
           textBox(),
           photo.createElement().build(),
           photo.createElement().build(),
@@ -130,10 +59,10 @@ class JournalEntry extends StatelessWidget {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: (){
           Route route = MaterialPageRoute(
-          builder: (context) => Day(
+            builder: (context) => Day(
               choiceDay: choiceDay, journalText: myController.text, ),
           );
-        Navigator.push(context, route);
+          Navigator.push(context, route);
         },
         label: Text('Save'),
         icon: Icon(FontAwesomeIcons.save),
