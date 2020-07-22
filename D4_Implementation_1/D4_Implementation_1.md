@@ -71,11 +71,25 @@ READ_ME.md file added along with CODE_OF_CONDUCT.md, CONTRIBUTING.md, and LICENS
 
 For Implementation 1, we decided to keep things clean from UI perspective, focus on functionality, and lay the foundation for customization.  Much of the display is based on the design of Flutter and the use of different Widgets and Packages to build the app display.  The calendar display is provided by table_calendar and has been well designed for mobile application use. The team wants to ensure that the user can customize their journal, and we feel that themes and colors are an important component of that.  We added the ability to customize the color with a cool package called flutter_hsvcolor_picker.
 
+<<<<<<< HEAD
 ![calendar](./img/calander.PNG)
 ![customize](./img/customize.PNG)
 ![viewjournal](./img/viewjournal.PNG)
 ![editjournal](./img/editjournal.PNG)
 ![imageintegration](./img/imageintegration.PNG)
+=======
+
+![calander](./img/calander.png)
+
+![customize](./img/customize.png)
+
+![viewjournal](./img/viewjournal.png)
+
+![editjournal](./img/editjournal.png)
+
+![imageintegration](./img/imageintegration.png)
+>>>>>>> f06eb60f2ef5ce1a5422329e9eeaf3dda2e18a90
+
 
 ## 9. Lessons learned
 
