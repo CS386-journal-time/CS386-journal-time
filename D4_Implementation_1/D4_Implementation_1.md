@@ -55,7 +55,7 @@ From a backend and data perspective. We have been educating ourselves on Android
 ## 5. Deployment
 
 
-Our plan is to use a Firebase backend hosted within a Docker container on a cloud AWS server.  We were unable to finish the setup by this implementation, but linked below is the documentation for Firebase.  Firebase was created by Google along with Flutter so they mesh together well and provide a seamless user experience.
+Our plan is to use a Firebase backend hosted within a Docker container on a cloud AWS server.  We were unable to finish the setup by this implementation, but linked below is the documentation for Firebase.  Firebase was created by Google along with Flutter making them mesh together well and provide a seamless user experience.
 
 * Firebase documentation: <https://firebase.google.com/docs>
 
