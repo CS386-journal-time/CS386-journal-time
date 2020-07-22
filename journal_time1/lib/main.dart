@@ -106,27 +106,28 @@ class _HomePageState extends State<HomePage> {
               height: 20,
             ),
             Center(
-              child: RaisedButton(
-                onPressed: () {
-                  Route route = MaterialPageRoute(
-                    builder: (context) => Day(choiceDay: choiceDay),
-                  );
-                  Navigator.push(context, route);
-                },
-                child: Text('Go to Journal'),
-              ),
-
-              ),
-            BottomAppBar(child: RaisedButton(
-              onPressed: () {
-                Route route = MaterialPageRoute(
-                  builder: (context) => customColor(),
-                );
-                Navigator.push(context, route);
-              },
-              child: Text('Customize'),
+              child: Column(
+                children: <Widget>[
+                  RaisedButton(
+                    onPressed: () {
+                         Route route = MaterialPageRoute(
+                      builder: (context) => Day(choiceDay: choiceDay),
+                                   );
+                      Navigator.push(context, route);
+                              },
+                          child: Text('Go to Journal'),
+                  ),
+                  RaisedButton(
+                    onPressed: () {
+                      Route route = MaterialPageRoute(
+                        builder: (context) => customColor(),
+                      );
+                      Navigator.push(context, route);
+                    },
+                    child: Text('Customize'),
+                  ),
+                ],
             ),
-
             ),
             ],
         ),
