@@ -12,6 +12,8 @@ Trello: https://trello.com/b/ckpVrn78/team3-journal-time
 
 ## 2. Implemented requirements
 
+We have made prototype developments of the following features that show basic function and proof of concept.  The application will be enhanced in the near future as more of the backend data management systems are implemented.
+
 * **Calendar Display** using the table_calendar package
 
 * **Basic Navigation**
@@ -20,21 +22,33 @@ Trello: https://trello.com/b/ckpVrn78/team3-journal-time
 
 * **Ability to select a photo from the smartphone**
 
+* **Basic Color Customization**
+
+* **Google Map Location Identifier**
+
 ## 3. Adopted technologies
 
 **Flutter SDK with Dart programming language on Android Studio platform.**  Flutter / Dart was developed to allow the creation of mobile apps that work on both Android and iOS with limited to no customization required.  Flutter was the obvious choice for the SDK from a technical perspective and several team members had experience with Android Studio.
 
+**Flutter Packages** table_calendar and image_picker have been implemented to support Calendar and Photo operations
+
+**Google API** Used to help identify Map location (in-development)
+
 **Mobile Device Standards** Our primary testing will be done on a Nexus 6 virtual device.  However, with the nature of Flutter, we will also be doing secondary testing on other virtual devices and physical devices including at least one Android tablet.
 
-**AWS** Linux Server with Docker Image of Firebase
+**Amazon Web Service** Linux Server for hosting on application (in-development)
 
-**Backend**
+**Firebase** Mobile and web application development platform for backend operation (in-development)
 
-**Docker**
+**Docker** For project application deployment
 
 ## 4. Learning/training
 
 Different members of the team have different levels of skill and background with different technologies.  Given the short timelines of the class project, we have decided to initially divide tasks based on team member background.  In the early stages it is expected that leads will provide assistance and learning materials to the team stages as well as oversee successful implementation.  As the project develops we have started shifting responsibilities so that each member of the team can gain broader exposure to the different technologies.  
+
+Because the entire team is relatively new to Flutter, we have all had to depend on various internet and YouTube lessons to gain insights on various features.
+
+From a backend and data perspective. We have been educating ourselves on Android Web Services and Google's Firestore which we will need deploy through Docker.  Select team members have been more engaged around Docker and AWS while others have been focused on implementing Firestore with Flutter.
 
 ## 5. Deployment
 
@@ -54,7 +68,11 @@ Lorum Ipsum
 
 ## 9. Lessons learned
 
-One of the biggest challenges of this deliverable is the pace at which we 
+As we move into the design phase of this application, we have noticed how helpful certain Flutter packages can be in our our implementation and how they can change certain dynamics of our class designs.  For example, the table_calendar application creates a calendar that is so useful that we will to redesign our Day class.  
+
+Implementing a UI while also building out the backend is challenging.  There are a number of new technologies that we are all trying to learn and being strategic about how to deploy and integrate the various technologies.  
+
+One of the biggest challenges of this deliverable is the pace at which we had to develop a working application as well as complete other project checkpoints and deliverables.  The team was very effective in using the weekend to make progress on the Journal Time application within Flutter.  And we see that we will need to keep that pace.  Furthermore, not being able to interact in person also creates challenges as it is a little harder to troubleshoot or complete certain deliverables in subgroups.  
 
 ## 10. Demo
 
