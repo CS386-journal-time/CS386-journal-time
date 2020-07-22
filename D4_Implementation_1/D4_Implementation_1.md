@@ -56,7 +56,7 @@ Lorum Ipsum
 
 ## 6. Licensing
 
-Lorum Ipsum
+This source code will utilize an MIT License. This is an ideal license for this project as its only conditions are in requiring preservation of copyright and license notices, and it is a generally simple and permissive license. This license allows for commercial use, distribution, modification, and public use. Therefore, all of our plans involving Journal Time, for code modification, usage, and distribution, will be permissable under this license.
 
 ## 7. Readme File
 
