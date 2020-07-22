@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'JournalEntry.dart';
 import 'main.dart';
+import 'dart:io';
 
 class Day extends StatelessWidget {
   final DateTime choiceDay;
   String journalText;
+  File image;
 
   Day({this.choiceDay, this.journalText});
 
@@ -15,6 +17,7 @@ class Day extends StatelessWidget {
     }
     return journalText;
   }
+
 
   String formatDate() {
     DateFormat formatter = DateFormat('LLLL d, y');

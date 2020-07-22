@@ -10,8 +10,8 @@ import 'Day.dart';
 class JournalEntry extends StatelessWidget {
   DateTime choiceDay;
   String journalText;
-  File image;
   final myController = TextEditingController();
+  var photo = Photo();
 
   JournalEntry({this.choiceDay, this.journalText});
 
@@ -24,7 +24,6 @@ class JournalEntry extends StatelessWidget {
   void dispose() {
     myController.dispose();
   }
-
 
   Widget textBox() {
     final int maxLine = 30;
@@ -43,47 +42,6 @@ class JournalEntry extends StatelessWidget {
     );
   }
 
-  Widget imageGrid() {
-    return GridView.count(
-      shrinkWrap: true,
-      primary: false,
-      padding: const EdgeInsets.all(10),
-      crossAxisSpacing: 10,
-      crossAxisCount: 3,
-      children: <Widget>[
-        GestureDetector(
-          onTap: (){
-            print('test');
-          },
-          child: Container(
-          color: Colors.grey[400],
-          child: Icon(FontAwesomeIcons.camera),
-          ),
-        ),
-        GestureDetector(
-          onTap: (){
-            print('test');
-          },
-          child: Container(
-            color: Colors.grey[400],
-            child: Icon(FontAwesomeIcons.camera),
-          ),
-        ),
-        GestureDetector(
-          onTap: (){
-            print('test');
-          },
-          child: Container(
-            color: Colors.grey[400],
-            child: Icon(FontAwesomeIcons.camera),
-          ),
-        ),
-      ],
-    );
-  }
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -94,14 +52,14 @@ class JournalEntry extends StatelessWidget {
       body: Column(
         children: <Widget>[
           textBox(),
-          imageGrid(),
+          photo.createElement().build(),
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: (){
           Route route = MaterialPageRoute(
           builder: (context) => Day(
-              choiceDay: choiceDay, journalText: myController.text),
+              choiceDay: choiceDay, journalText: myController.text, ),
           );
         Navigator.push(context, route);
         },
@@ -110,5 +68,63 @@ class JournalEntry extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
       ),
     );
+  }
+}
+
+
+class Photo extends StatefulWidget {
+  @override
+  PhotoState createState() => PhotoState();
+}
+
+class PhotoState extends State<Photo> {
+  File _image;
+  final picker = ImagePicker();
+
+  Future _getImageGallery() async {
+    var pickedFile = await picker.getImage(source: ImageSource.gallery);
+
+    setState(() {
+      _image = File(pickedFile.path);
+      print('File: $_image');
+    });
+  }
+  
+  Widget imageGrid() {
+    return GridView.count(
+      shrinkWrap: true,
+      primary: false,
+      padding: const EdgeInsets.all(10),
+      crossAxisSpacing: 10,
+      crossAxisCount: 3,
+      children: <Widget>[
+        GestureDetector(
+          onTap: _getImageGallery,
+          child: Container(
+            color: Colors.grey[400],
+            child: _image == null ? Icon(FontAwesomeIcons.camera) : Image.file(_image),
+          ),
+        ),
+        GestureDetector(
+          onTap: _getImageGallery,
+          child: Container(
+            color: Colors.grey[400],
+            child: _image == null ? Icon(FontAwesomeIcons.camera) : Image.file(_image),
+          ),
+        ),
+        GestureDetector(
+          onTap: _getImageGallery,
+          child: Container(
+            color: Colors.grey[400],
+            child: _image == null ? Icon(FontAwesomeIcons.camera) : Image.file(_image),
+          ),
+        ),
+      ],
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return imageGrid();
   }
 }
