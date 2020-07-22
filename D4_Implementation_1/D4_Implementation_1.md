@@ -14,17 +14,19 @@ Trello: https://trello.com/b/ckpVrn78/team3-journal-time
 
 We have made prototype developments of the following features that show basic function and proof of concept.  The application will be enhanced in the near future as more of the backend data management systems are implemented.
 
-* **Calendar Display** using the table_calendar package
+* **Calendar Display** (Brendan, David))
 
-* **Basic Navigation**
+* **Basic Navigation** (Seth, Brendan, Shelby)
 
-* **Text Box for a Journal Entry**
+* **Text Box for a Journal Entry** (Brendan)
 
-* **Ability to select a photo from the smartphone**
+* **Ability to select a photo from the smartphone** (Seth)
 
-* **Basic Color Customization**
+* **Basic Color Customization** (David)
 
-* **Google Map Location Identifier**
+* **Google Map Location Identifier** (Shelby)
+
+* **AWS and Docker Set Up** (Seth, Keil)
 
 ## 3. Adopted technologies
 
@@ -63,7 +65,7 @@ This source code will utilize an MIT License. This is an ideal license for this 
 
 ## 7. Readme File
 
-Lorum Ipsum
+READ_ME.md file added along with CODE_OF_CONDUCT.md, CONTRIBUTING.md, and LICENSE.md
 
 ## 8. Look & feel
 
