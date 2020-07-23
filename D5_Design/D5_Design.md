@@ -10,7 +10,9 @@ Users can also enter photos from their camera or camera roll into entries, as we
 
 ## 2. Architecture
 
-Lorem ipsum
+<img src="./img/ArchitectureDiagram.jpg" width=680/>
+
+We've chosen a server/ client architecture with a focus on local storage. 
 
 ## 3. Class Diagram
 
