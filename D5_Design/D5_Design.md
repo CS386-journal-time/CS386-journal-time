@@ -16,6 +16,8 @@ We've chosen a server/ client architecture with a focus on local storage. D5 Imp
 
 ## 3. Class Diagram
 
+As we develop insights into our implementation, we are able to provide updated class diagram that shows the interactions between the various classes.
+
 ![classDiagram](./img/classDiagram.png)
 
 ## 4. Sequence Diagram
@@ -24,7 +26,18 @@ Lorem ipsum
 
 ## 5. Design Patterns
 
-Lorem ipsum
+**Observer Design Pattern.  Passing the Selected Date (or choiceDay) to other entities.**
+
+![classDiagram](./img/observe.png)
+
+Within the Journal Time application, journal entries and their components will be organized based on the associated date (or choiceDay).  It will act effectively as a key to backend operations so that we can properly save and build the components of a Journal Entry.  Accordingly, the choiceDay will have to be provided throughout the program from class to class starting with the Calendar class.  
+
+Our current design is no pass the choiceDay: DateTime parameter with each navigation.  However, we are also considering implementing an Observer Design Pattern that would allow the different classes to be notified and updated when there is a change to the choiceDay.  Our project is being built with Flutter, and it has some cool tools to help developers manage states and data across screens and classes.  One of those is from a package called Provider that utilizes Change Notifiers and Providers to update data and state across different classes.  As we build out our application design, we are determining where it makes the most sense to use Change Notifiers and where to simply pass the choiceDay as a Parameter in navigation.  For a simple application , just passing the choiceDay in navigation would probably suffice but as we add features and functionality, an Observe Design Pattern may become more relevant.  
+
+Calendar: 	https://github.com/CS386-journal-time/CS386-journal-time/blob/master/journal_time/lib/main.dart
+
+Day: 	https://github.com/CS386-journal-time/CS386-journal-time/blob/master/journal_time/lib/Day.dart
+
 
 ## 6. Design Principles
 
