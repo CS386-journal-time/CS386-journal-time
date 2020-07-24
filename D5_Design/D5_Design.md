@@ -12,7 +12,7 @@ Users can also enter photos from their camera or camera roll into entries, as we
 
 <img src="./img/ArchitectureDiagram.jpg" width=680/>
 
-We've chosen a server/ client architecture with a focus on local storage.
+We've chosen a server/ client architecture with a focus on local storage. D5 Implentation Diagram.
 
 ## 3. Class Diagram
 
