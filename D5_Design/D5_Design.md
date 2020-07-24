@@ -16,7 +16,7 @@ We've chosen a server/ client architecture with a focus on local storage.
 
 ## 3. Class Diagram
 
-![classDiagram](./img/classDiagram.PNG)
+![classDiagram](./img/classDiagram.png)
 
 ## 4. Sequence Diagram
 
