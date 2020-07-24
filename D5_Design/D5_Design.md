@@ -28,4 +28,24 @@ Lorem ipsum
 
 ## 6. Design Principles
 
-Lorem ipsum 
+The Acronym SOLID stands for S - Single responsibility principle, O - Open/closed principle, L - Liskov substitution principle, I - Interface Segregation Principle, and D - Dependency Inversion Principle.
+
+S - Single Responsibility principle
+This principle states that every class should manage or have responsibility over a single part of the softwares functionality. For example in the journal time app there is one class for photo integration, customization and journaling. While they may pass some information back and forth each class is focused on one feature. To be more specific the photo Class photo journal_time1/lib/Photo.dart
+found : (https://github.com/CS386-journal-time/CS386-journal-time.git) 
+Focuses only on photo integration.
+
+O - Open/Closed principle
+The Open/Closed principle states that you should be able to add on or extend a classes behavior rather than modify it. One example from our code would be the customColor class which currently only modifies background color if we in the future we want to also allow the user to modify the color of their calendar we could define a class calanderColorChanger that implements customColor. In this way we won't have to touch existing modules.
+journal_time/lib/customColor.dart
+Found: (https://github.com/CS386-journal-time/CS386-journal-time.git ) 
+
+L - Liskov substitution principle
+To put this  principle simply you must be able to substitute the parent class for one of its children.
+
+I - Interface Segregation Principle
+This principle states that no client should have to depend on methods that they do not use. You should split your interface into smaller more specific groups.
+
+D - Dependency Inversion Principle.
+There are two main parts of this principle. First your high level modules shouldnt be dependent on any low-level modules however both should depend on interfaces/ abstractions. The second is that your abstractions shouldn't depend on Details.
+
