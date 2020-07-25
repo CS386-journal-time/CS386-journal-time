@@ -74,9 +74,9 @@ Within the Journal Time application, journal entries and their components will b
 
 Our current design is no pass the choiceDay: DateTime parameter with each navigation.  However, we are also considering implementing an Observer Design Pattern that would allow the different classes to be notified and updated when there is a change to the choiceDay.  Our project is being built with Flutter, and it has some cool tools to help developers manage states and data across screens and classes.  One of those is from a package called Provider that utilizes Change Notifiers and Providers to update data and state across different classes.  As we build out our application design, we are determining where it makes the most sense to use Change Notifiers and where to simply pass the choiceDay as a Parameter in navigation.  For a simple application , just passing the choiceDay in navigation would probably suffice but as we add features and functionality, an Observe Design Pattern may become more relevant.  
 
-Calendar: 	https://github.com/CS386-journal-time/CS386-journal-time/blob/master/journal_time/lib/main.dart
+Calendar: 	https://github.com/CS386-journal-time/journal_time/blob/master/lib/main.dart
 
-Day: 	https://github.com/CS386-journal-time/CS386-journal-time/blob/master/journal_time/lib/Day.dart
+Day: 	https://github.com/CS386-journal-time/journal_time/blob/master/lib/Day.dart
 
 ### Design Pattern #2 (Creational: Builder)
 
@@ -84,7 +84,7 @@ Day: 	https://github.com/CS386-journal-time/CS386-journal-time/blob/master/journ
 
 The current iteration of the JournalEntry file accompanies the Photo, JournalText, and MapLocation classes.  JournalEntry provides the groundwork with the other 3 classes piggybacking off with their own set of methods. Each class provides their respective amount of data back to the entry page for display to the user.
 
-JournalEntry: <https://github.com/CS386-journal-time/CS386-journal-time/blob/master/journal_time/lib/JournalEntry.dart>
+JournalEntry: <https://github.com/CS386-journal-time/journal_time/blob/master/lib/JournalEntry.dart>
 
 **Behavioral - the Command Design Pattern. loose coupling between homePage and customColor.**
 
@@ -97,25 +97,22 @@ s
 The Acronym SOLID stands for S - Single responsibility principle, O - Open/closed principle, L - Liskov substitution principle, I - Interface Segregation Principle, and D - Dependency Inversion Principle.
 
 S - Single Responsibility principle
-This principle states that every class should manage or have responsibility over a single part of the softwares functionality. For example in the journal time app there is one class for photo integration, customization and journaling. While they may pass some information back and forth each class is focused on one feature. To be more specific the photo Class photo journal_time1/lib/Photo.dart
-found : (https://github.com/CS386-journal-time/CS386-journal-time.git)
-Focuses only on photo integration.
+This principle states that every class should manage or have responsibility over a single part of the softwares functionality. For example in the journal time app there is one class for photo integration, customization and journaling. While they may pass some information back and forth each class is focused on one feature.
+Photo.dart: https://github.com/CS386-journal-time/journal_time/blob/master/lib/Photo.dart
+
 
 O - Open/Closed principle
 The Open/Closed principle states that you should be able to add on or extend a classes behavior rather than modify it. One example from our code would be the customColor class which currently only modifies background color if we in the future we want to also allow the user to modify the color of their calendar we could define a class calanderColorChanger that implements customColor. In this way we won't have to touch existing modules.
-journal_time/lib/customColor.dart
-Found: (https://github.com/CS386-journal-time/CS386-journal-time.git )
+CustomColor.dart: https://github.com/CS386-journal-time/journal_time/blob/master/lib/customColor.dart
 
 L - Liskov substitution principle
 To put this  principle simply you must be able to substitute the parent class for one of its children. Use inheritance properly so that things are contextualized , moderated and don't just extended because they have something in common. LSP is the principle which enables Open/Close principle. As we expand the personalization features we will add a calanderColorChanger class which would come from the customColor class. When implemented correctly the customColor class could replace the child calanderColorChanger there for following LSP.
-journal_time/lib/customColor.dart
-Found: (https://github.com/CS386-journal-time/CS386-journal-time.git )
+CustomColor.dart: https://github.com/CS386-journal-time/journal_time/blob/master/lib/customColor.dart
 
 I - Interface Segregation Principle
-This principle states that no client should have to depend on methods that they do not use. You should split your interface into smaller more specific groups. For example, our classes Photo (which allows users to add photos to journal entries) and JournalEntry (which allows users to write text for journal entries) have independant methodws from each other, even though they both extend from StatelessWidget. This ensures that they only depend on the methods needed to integrate their specific types of information, leading to more clean and concise code.
-journal_time/lib/JournalEntry.dart
-Found: (https://github.com/CS386-journal-time/CS386-journal-time.git )
+This principle states that no client should have to depend on methods that they do not use. You should split your interface into smaller more specific groups. For example, our classes Photo (which allows users to add photos to journal entries) and JournalEntry (which allows users to write text for journal entries) have independent methods from each other, even though they both extend from StatelessWidget. This ensures that they only depend on the methods needed to integrate their specific types of information, leading to more clean and concise code.
+JournalEntry.dart: https://github.com/CS386-journal-time/journal_time/blob/master/lib/JournalEntry.dart
 
 D - Dependency Inversion Principle.
 There are two main parts of this principle. First your high level modules shouldn't be dependent on any low-level modules however both should depend on interfaces/ abstractions. The second is that your abstractions shouldn't depend on Details. We believe that we have done this with the design of the JournalEntries class.  There is an assortment of different attributes that could be added to the JournalEntry and a lot a functionality within the JournalEntry class.  Our design ensured that our model had flexibility in the classes that are added to each Journal Entry.  Furthermore, we have created a saveJournal method that can save objects from different classes to add to the Journal Entry.  
-Found within JournalEntry.dart
+JournalEntry.dart: https://github.com/CS386-journal-time/journal_time/blob/master/lib/JournalEntry.dart
