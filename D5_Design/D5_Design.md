@@ -14,9 +14,9 @@ Users can also enter photos from their camera or camera roll into entries, as we
 
 *fig 2.1 Journal Time Application Architecture Diagram*
 
-We've chosen a server/ client architecture with a focus on local storage. The mobile application may only communicate with the Server and the Local System tools, any communication that the app has to do with the internet or other outside systems is first passed through the server. The Packages shown above represent classes within the application. 
+We've chosen a server/ client architecture with a focus on local storage. The mobile application may only communicate with the Server and the Local System tools, any communication that the app has to do with the internet or other outside systems is first passed through the server. The Packages shown above represent classes within the application.
 
-Where packages are "*nested*" represents that the inside Class is a member of the outside Package.  Where a Packages and/or Classes is connected by a line or arrow represents a direct communication or connection. Where there is no connecting arrow, there is also no means of direct interaction, though there still may be indirect communication between members of the same Package or by using an intermidiary such as "**News Stories**" querying the Server which wil then use "**MakeAPICall**" to query the "**NewsAPI**."
+Where packages are "*nested*" represents that the inside Class is a member of the outside Package.  Where a Packages and/or Classes is connected by a line or arrow represents a direct communication or connection. Where there is no connecting arrow, there is also no means of direct interaction, though there still may be indirect communication between members of the same Package or by using an intermediary such as "**News Stories**" querying the Server which will then use "**MakeAPICall**" to query the "**NewsAPI**."
 
 ## 3. Class Diagram
 
@@ -90,7 +90,7 @@ JournalEntry: <https://github.com/CS386-journal-time/CS386-journal-time/blob/mas
 
 ![commandDesignDiagram](./img/CommandDesign.PNG)
 
-Within the journal time application many of our classes interact with each other. However it is best if our classes do not heavily depend on one another. the custom Color class alows the user to personalize their experince with the click of a button. the user is brought into a new state created by the customColor class. the custom color class then does all the work before passing the users selected color back.
+Within the journal time application many of our classes interact with each other. However it is best if our classes do not heavily depend on one another. the custom Color class allows the user to personalize their experience with the click of a button. the user is brought into a new state created by the customColor class. the custom color class then does all the work before passing the users selected color back.
 s
 ## 6. Design Principles
 
@@ -107,7 +107,7 @@ journal_time/lib/customColor.dart
 Found: (https://github.com/CS386-journal-time/CS386-journal-time.git )
 
 L - Liskov substitution principle
-To put this  principle simply you must be able to substitute the parent class for one of its children. Use inheritance properly so that things are contextulized , moderated and dont just extended because they have something in comin. LSP is the principle which enables OPen/Close principle. as we expand the personilzation features we will add a calanderColorChanger class which would come from the customColor class. when implemented correctly the customColor class could replace the child calanderColorChanger there for following LSP.
+To put this  principle simply you must be able to substitute the parent class for one of its children. Use inheritance properly so that things are contextualized , moderated and don't just extended because they have something in common. LSP is the principle which enables Open/Close principle. As we expand the personalization features we will add a calanderColorChanger class which would come from the customColor class. When implemented correctly the customColor class could replace the child calanderColorChanger there for following LSP.
 journal_time/lib/customColor.dart
 Found: (https://github.com/CS386-journal-time/CS386-journal-time.git )
 
@@ -117,4 +117,5 @@ journal_time/lib/JournalEntry.dart
 Found: (https://github.com/CS386-journal-time/CS386-journal-time.git )
 
 D - Dependency Inversion Principle.
-There are two main parts of this principle. First your high level modules shouldnt be dependent on any low-level modules however both should depend on interfaces/ abstractions. The second is that your abstractions shouldn't depend on Details.
+There are two main parts of this principle. First your high level modules shouldn't be dependent on any low-level modules however both should depend on interfaces/ abstractions. The second is that your abstractions shouldn't depend on Details. We believe that we have done this with the design of the JournalEntries class.  There is an assortment of different attributes that could be added to the JournalEntry and a lot a functionality within the JournalEntry class.  Our design ensured that our model had flexibility in the classes that are added to each Journal Entry.  Furthermore, we have created a saveJournal method that can save objects from different classes to add to the Journal Entry.  
+Found within JournalEntry.dart
