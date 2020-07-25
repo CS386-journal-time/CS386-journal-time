@@ -22,7 +22,43 @@ As we develop insights into our implementation, we are able to provide updated c
 
 ## 4. Sequence Diagram
 
-Lorem ipsum
+![sequenceDiagram](./img/SequenceDiagramPhotoUseCase.PNG)
+
+### Use Case: Importing a photo
+
+### Description
+
+* The user can import a photo into their entry.
+
+### Actor
+
+* User
+
+### Pre-conditions
+
+* The user has opened the app to the home screen (calendar view).
+
+## Basic Flow of Events and Alternative Flows
+
+1. User views a day's journal
+
+2. User edits a journal entry
+
+3. User chooses direction for photo importation
+
+   3.1 User selects a photo from the gallery
+
+   3.2 User takes a photo with the camera
+
+   3.3 User cancels the import
+
+4. User saves the entry
+
+5. User returns to the calendar view
+
+### Post-conditions
+
+* The image is successfully added to the entry.
 
 ## 5. Design Patterns
 
@@ -38,6 +74,15 @@ Calendar: 	https://github.com/CS386-journal-time/CS386-journal-time/blob/master/
 
 Day: 	https://github.com/CS386-journal-time/CS386-journal-time/blob/master/journal_time/lib/Day.dart
 
+### Creational Desing Pattern Build Design Pattern
+
+![classDiagramPhoto](./img/builder.png)
+
+JournalEntry is a Builder pattern.  The journalEntry Class provides the groundwork for the three peices necessary for the complete journal entry itself.  The the Photo, JournalText, and MapLocation classes retrieve the relative data and the JournalEntry class interprest each classes data to form the class itself.
+
+The current design for incorporates the JournalEntry class as the home for all the data relative to the entry for the given day.  
+
+JournalEntry: <https://github.com/CS386-journal-time/CS386-journal-time/blob/master/journal_time/lib/JournalEntry.dart>
 
 ## 6. Design Principles
 
