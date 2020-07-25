@@ -44,7 +44,7 @@ As we develop insights into our implementation, we are able to provide updated c
 
 2. User edits a journal entry
 
-3. User chooses direction for photo importation
+3. User chooses a direction for photo importation
 
    3.1 User selects a photo from the gallery
 
@@ -74,13 +74,11 @@ Calendar: 	https://github.com/CS386-journal-time/CS386-journal-time/blob/master/
 
 Day: 	https://github.com/CS386-journal-time/CS386-journal-time/blob/master/journal_time/lib/Day.dart
 
-### Creational Desing Pattern Build Design Pattern
+### Design Pattern #2 (Creational: Builder)
 
-![classDiagramPhoto](./img/builder.png)
+![classDiagramPhoto](./img/builder.png)  
 
-JournalEntry is a Builder pattern.  The journalEntry Class provides the groundwork for the three peices necessary for the complete journal entry itself.  The the Photo, JournalText, and MapLocation classes retrieve the relative data and the JournalEntry class interprest each classes data to form the class itself.
-
-The current design for incorporates the JournalEntry class as the home for all the data relative to the entry for the given day.  
+The current iteration of the JournalEntry file accompanies the Photo, JournalText, and MapLocation classes.  JournalEntry provides the groundwork with the other 3 classes piggybacking off with their own set of methods. Each class provides their respective amount of data back to the entry page for display to the user.
 
 JournalEntry: <https://github.com/CS386-journal-time/CS386-journal-time/blob/master/journal_time/lib/JournalEntry.dart>
 
