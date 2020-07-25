@@ -108,7 +108,9 @@ journal_time/lib/customColor.dart
 Found: (https://github.com/CS386-journal-time/CS386-journal-time.git )
 
 I - Interface Segregation Principle
-This principle states that no client should have to depend on methods that they do not use. You should split your interface into smaller more specific groups.
+This principle states that no client should have to depend on methods that they do not use. You should split your interface into smaller more specific groups. For example, our classes Photo (which allows users to add photos to journal entries) and JournalEntry (which allows users to write text for journal entries) have independant methodws from each other, even though they both extend from StatelessWidget. This ensures that they only depend on the methods needed to integrate their specific types of information, leading to more clean and concise code.
+journal_time/lib/JournalEntry.dart
+Found: (https://github.com/CS386-journal-time/CS386-journal-time.git )
 
 D - Dependency Inversion Principle.
 There are two main parts of this principle. First your high level modules shouldnt be dependent on any low-level modules however both should depend on interfaces/ abstractions. The second is that your abstractions shouldn't depend on Details.
