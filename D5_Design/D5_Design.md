@@ -10,9 +10,13 @@ Users can also enter photos from their camera or camera roll into entries, as we
 
 ## 2. Architecture
 
-<img src="./img/ArchitectureDiagram.jpg" width=680/>
+<img alt="Journal Time Application Architecture Diagram" src="./img/ArchitectureDiagram.jpg" width=680/>
 
-We've chosen a server/ client architecture with a focus on local storage. D5 Implentation Diagram.
+*fig 2.1 Journal Time Application Architecture Diagram*
+
+We've chosen a server/ client architecture with a focus on local storage. The mobile application may only communicate with the Server and the Local System tools, any communication that the app has to do with the internet or other outside systems is first passed through the server. The Packages shown above represent classes within the application. 
+
+Where packages are "*nested*" represents that the inside Class is a member of the outside Package.  Where a Packages and/or Classes is connected by a line or arrow represents a direct communication or connection. Where there is no connecting arrow, there is also no means of direct interaction, though there still may be indirect communication between members of the same Package or by using an intermidiary such as "**News Stories**" querying the Server which wil then use "**MakeAPICall**" to query the "**NewsAPI**."
 
 ## 3. Class Diagram
 
