@@ -38,7 +38,7 @@ As we develop insights into our implementation, we are able to provide updated c
 
 * The user has opened the app to the home screen (calendar view).
 
-## Basic Flow of Events and Alternative Flows
+### Basic Flow of Events and Alternative Flows
 
 1. User views a day's journal
 
