@@ -39,6 +39,12 @@ Calendar: 	https://github.com/CS386-journal-time/CS386-journal-time/blob/master/
 Day: 	https://github.com/CS386-journal-time/CS386-journal-time/blob/master/journal_time/lib/Day.dart
 
 
+**Behavioral - the Command Design Pattern. loose coupling between homePage and customColor.**
+
+![commandDesignDiagram](./img/CommandDesign.PNG)
+
+Within the journal time application many of our classes interact with each other. However it is best if our classes do not heavily depend on one another. the custom Color class alows the user to personalize their experince with the click of a button. the user is brought into a new state created by the customColor class. the custom color class then does all the work before passing the users selected color back.
+s
 ## 6. Design Principles
 
 The Acronym SOLID stands for S - Single responsibility principle, O - Open/closed principle, L - Liskov substitution principle, I - Interface Segregation Principle, and D - Dependency Inversion Principle.
@@ -54,7 +60,9 @@ journal_time/lib/customColor.dart
 Found: (https://github.com/CS386-journal-time/CS386-journal-time.git )
 
 L - Liskov substitution principle
-To put this  principle simply you must be able to substitute the parent class for one of its children.
+To put this  principle simply you must be able to substitute the parent class for one of its children. Use inheritance properly so that things are contextulized , moderated and dont just extended because they have something in comin. LSP is the principle which enables OPen/Close principle. as we expand the personilzation features we will add a calanderColorChanger class which would come from the customColor class. when implemented correctly the customColor class could replace the child calanderColorChanger there for following LSP.
+journal_time/lib/customColor.dart
+Found: (https://github.com/CS386-journal-time/CS386-journal-time.git )
 
 I - Interface Segregation Principle
 This principle states that no client should have to depend on methods that they do not use. You should split your interface into smaller more specific groups.
