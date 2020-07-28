@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hsvcolor_picker/flutter_hsvcolor_picker.dart';
 import 'Day.dart';
 import 'package:intl/intl.dart';
 import 'dart:io';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
+
+import 'package:flutter/material.dart';
+import 'package:flutter_map/flutter_map.dart';
+import 'package:latlong/latlong.dart';
 
 
 class JournalEntry extends StatelessWidget {
@@ -134,67 +139,35 @@ class PhotoState extends State<Photo> {
     return imageGrid();
   }
 }
+//Access Map API
 
+Widget build(BuildContext context) {
+    return new Scaffold(
+        appBar: new AppBar(title: new Text('Leaflet Maps')),
+        body: new FlutterMap(
+            options: new MapOptions(
+                center: new LatLng(40.71, -74.00), minZoom: 10.0),
+            layers: [
+              new TileLayerOptions(
+                  urlTemplate:
+                  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                  subdomains: ['a', 'b', 'c']),
+              new MarkerLayerOptions(markers: [
+                new Marker(
+                    width: 45.0,
+                    height: 45.0,
+                    point: new LatLng(40.73, -74.00),
+                    builder: (context) => new Container(
+                      child: IconButton(
+                        icon: Icon(Icons.location_on),
+                        color: Colors.red,
+                        iconSize: 45.0,
+                        onPressed: () {
+                          print('Marker tapped');
+                        },
+                      ),
+                    ))
+              ])
+            ]));
 
-//Navigate to Map
-class mapFeature extends StatefulWidget {
-  @override
-  mapLocation createState() => mapLocation();
-}
-
-class mapLocation extends State<mapFeature> {
-  File _map;
-  final picker = Screenshot();
-
-  Future _Screenshot() async {
-    var picLocation = await picker.Screenshot(source: ImageSource.gallery);
-
-    setState(() {
-      _map = File(pickedFile.path);
-      print('File: $_map');
-    });
   }
-
-  File getImage()
-  {
-    return _map;
-  }
-
-  Widget mapGrid() {
-    return GridView.count(
-      shrinkWrap: true,
-      primary: false,
-      padding: const EdgeInsets.all(1),
-      crossAxisSpacing: 1,
-      crossAxisCount: 1,
-      children: <Widget>[
-        GestureDetector(
-          onTap: _getImageGallery,
-          child: Container(
-            color: Colors.grey[400],
-            child: _image == null ? Icon(FontAwesomeIcons.camera) : Image.file(_map),
-          ),
-        ),
-        GestureDetector(
-          onTap: _getImageGallery,
-          child: Container(
-            color: Colors.grey[400],
-            child: _image == null ? Icon(FontAwesomeIcons.camera) : Image.file(_map),
-          ),
-        ),
-        GestureDetector(
-          onTap: _getImageGallery,
-          child: Container(
-            color: Colors.grey[400],
-            child: _image == null ? Icon(FontAwesomeIcons.camera) : Image.file(_map),
-          ),
-        ),
-      ],
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return imageGrid();
-  }
-}
