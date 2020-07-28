@@ -134,3 +134,67 @@ class PhotoState extends State<Photo> {
     return imageGrid();
   }
 }
+
+
+//Navigate to Map
+class mapFeature extends StatefulWidget {
+  @override
+  mapLocation createState() => mapLocation();
+}
+
+class mapLocation extends State<mapFeature> {
+  File _map;
+  final picker = Screenshot();
+
+  Future _Screenshot() async {
+    var picLocation = await picker.Screenshot(source: ImageSource.gallery);
+
+    setState(() {
+      _map = File(pickedFile.path);
+      print('File: $_map');
+    });
+  }
+
+  File getImage()
+  {
+    return _map;
+  }
+
+  Widget mapGrid() {
+    return GridView.count(
+      shrinkWrap: true,
+      primary: false,
+      padding: const EdgeInsets.all(1),
+      crossAxisSpacing: 1,
+      crossAxisCount: 1,
+      children: <Widget>[
+        GestureDetector(
+          onTap: _getImageGallery,
+          child: Container(
+            color: Colors.grey[400],
+            child: _image == null ? Icon(FontAwesomeIcons.camera) : Image.file(_map),
+          ),
+        ),
+        GestureDetector(
+          onTap: _getImageGallery,
+          child: Container(
+            color: Colors.grey[400],
+            child: _image == null ? Icon(FontAwesomeIcons.camera) : Image.file(_map),
+          ),
+        ),
+        GestureDetector(
+          onTap: _getImageGallery,
+          child: Container(
+            color: Colors.grey[400],
+            child: _image == null ? Icon(FontAwesomeIcons.camera) : Image.file(_map),
+          ),
+        ),
+      ],
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return imageGrid();
+  }
+}

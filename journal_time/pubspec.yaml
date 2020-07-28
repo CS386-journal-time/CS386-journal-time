@@ -27,6 +27,10 @@ dependencies:
   flutter_hsvcolor_picker: ^0.0.1
   font_awesome_flutter: ^8.8.1
   table_calendar: ^2.2.3
+  screenshot: ^0.2.0
+  image_gallergy_saver: ^1.5.0
+  latlong: ^0.6.1
+  flutter_map: ^0.10.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
