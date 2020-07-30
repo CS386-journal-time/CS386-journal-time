@@ -13,17 +13,35 @@ We have added new requirements to this version of Journal Time and also updated 
 
 ### D2 Implemented requirements
 
-* **Docker** (Keil, Seth)
+* **Created User Registration** (Seth)
+Trello: https://trello.com/c/cxguNIui
+Pull Request: Brendan / Keil
+![login](./img/login.png)
+
+* **Connections to Firecloud database** (Seth, Brendan)
+Trello: https://trello.com/c/cxguNIui
+Pull Request: Brendan / Keil
+![edit](./img/edit.png)
 
 * **Updated User Interface** (Brendan, David)
-
-* **Updated Customization** (David)
+Trello: https://trello.com/c/K7ZxGDXA
+Pull Request: Brendan / Keil
+![display](./img/display.png)
 
 * **Updated Customization: Canvas and background colors** (David)
+Trello Card: https://trello.com/c/6pO2iMAV
+Pull Request: Brendan / Keil
+![color1](./img/color1.png)
+![color2](./img/color2.png)
 
 * **Map Display** (Brendan, Shelby)
+Trello Card: https://trello.com/c/6pO2iMAV
+Pull Request: Brendan / Keil
+![map](./img/map.png)
 
-Trello Card:
+* **Docker and VM Setup** (Keil)
+https://trello.com/c/KH1kOUqn
+
 
 ### D1 Implemented Requirements
 
@@ -78,11 +96,9 @@ App Video (David)
 
 ## 4. Code Quality
 
-We managed code quality by routinely testing and reviewing each other's code. By looking through one another's code, we were able to give ourselves the opprotunities to make any necessary changes to formatting to ensure better code quality.
+We managed code quality by routinely testing and reviewing each other's code. By looking through one another's code, we were able to give ourselves the opportunities to make any necessary changes to formatting to ensure better code quality.  In order to maintain code quality, we also made sure to discuss how we were formatting our code and organizing our files in each of our meetings. This helped us make sure that we were consistent in our formatting and organization, making it easier to read, edit, and locate specific coding.
 
-In order to maintain code quality, we also made sure to discuss how we were formatting our code and organizing our files in each of our meetings. This helped us make sure that we were consistent in our formatting and organization, making it easier to read, edit, and locate specific coding.
-
-Maintaining code across the users was somewhat challenging even when utilizing Git.  First, some
+That said, maintaining code across the users was somewhat challenging even when utilizing Git.  First, some
 team members had trouble getting the root project to run properly.  This encouraged us to rethink how to store Android Projects on Git.  We ended up storing the projects in a folder within Git and this seemed to fix the first issue.  However, there are real challenges in such time compressed project.  As our team simultaneously worked on different aspects of the project such as features, backend, and user interface, there was always additional effort in merging different branches.  For example, when certain aspects of the backend needed to get updated, it changed some of the design of our classes and required updates in the UI to be done manually.   
 
 We also recognize a need to do better commenting within our code.  Our class names and variables are really good, but there could be better opportunity to explain certain functions and aspects of the code.  It would also be helpful as we improve and update the App.  

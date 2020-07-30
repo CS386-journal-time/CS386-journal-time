@@ -1,4 +1,0 @@
-#Tue Jul 28 10:06:57 CDT 2020
-base.0=/Users/shelbyhagemann/Desktop/CS 386 Soft/CS386-journal-time/journal_time/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
