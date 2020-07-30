@@ -16,28 +16,28 @@ We have added new requirements to this version of Journal Time and also updated 
 * **Created User Registration** (Seth)
 Trello: https://trello.com/c/cxguNIui
 Pull Request: Brendan / Keil
-![login](./img/login.PNG)
+![login](./img/login.png)
 
 * **Connections to Firecloud database** (Seth, Brendan)
 Trello: https://trello.com/c/cxguNIui
 Pull Request: Brendan / Keil
-![edit](./img/edit.PNG)
+![edit](./img/edit.png)
 
 * **Updated User Interface** (Brendan, David)
 Trello: https://trello.com/c/K7ZxGDXA
 Pull Request: Brendan / Keil
-![display](./img/display.PNG)
+![display](./img/display.png)
 
 * **Updated Customization: Canvas and background colors** (David)
 Trello Card: https://trello.com/c/6pO2iMAV
 Pull Request: Brendan / Keil
-![color1](./img/color1.PNG)
-![color2](./img/color2.PNG)
+![color1](./img/color1.png)
+![color2](./img/color2.png)
 
 * **Map Display** (Brendan, Shelby)
 Trello Card: https://trello.com/c/6pO2iMAV
 Pull Request: Brendan / Keil
-![map](./img/map.PNG)
+![map](./img/map.png)
 
 * **Docker and VM Setup** (Keil)
 https://trello.com/c/KH1kOUqn
