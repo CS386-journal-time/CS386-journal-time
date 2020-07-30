@@ -92,7 +92,7 @@ Pull Request for Implementation:
 ## 3. Demo
 
 ![Demo](./img/demo.wmv)
-
+[Android APK Release](https://github.com/CS386-journal-time/journal/blob/QA/journal-release.apk)
 
 ## 4. Code Quality
 
