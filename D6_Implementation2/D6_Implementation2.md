@@ -92,4 +92,4 @@ Overall, the team put in a good effort to work through issues and continues to i
 
 ## 5. Lessons Learned
 
-Firebase is complicated.  
+As a team we have learned that putting together a backend is time consuming and convoluted.  We underestimated the time needed for set up.  As of now, we have created plan to finish it up by the final implementation, but the time commitment needed has been the the main lesson learned.
