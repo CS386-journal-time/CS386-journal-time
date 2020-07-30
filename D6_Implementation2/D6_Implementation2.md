@@ -17,7 +17,10 @@ We have added new requirements to this version of Journal Time and also updated 
 
 * **Updated User Interface** (Brendan, David)
 
-* **Updated Customization** (David)
+* **Updated Customization: Canvas and background colors** (David)
+
+* **Map Display** (Brendan, Shelby)
+
 
 ### D1 Implemented Requirements
 
@@ -43,7 +46,12 @@ App Video (David)
 
 ## 4. Code Quality
 
-Flutter fun.
+Maintaining code across the users was somewhat challenging even when utilizing Git.  First, some
+team members had trouble getting the root project to run properly.  This encouraged us to rethink how to store Android Projects on Git.  We ended up storing the projects in a folder within Git and this seemed to fix the first issue.  However, there are real challenges in such time compressed project.  As our team simultaneously worked on different aspects of the project such as features, backend, and user interface, there was always additional effort in merging different branches.  For example, when certain aspects of the backend needed to get updated, it changed some of the design of our classes and required updates in the UI to be done manually.   
+
+We also recognize a need to do better commenting within our code.  Our class names and variables are really good, but there could be better opportunity to explain certain functions and aspects of the code.  It would also be helpful as we improve and update the App.  
+
+Overall, the team put in a good effort to work through issues and continues to implement and improve our strategies to ensure code quality.  
 
 
 ## 5. Lessons Learned
