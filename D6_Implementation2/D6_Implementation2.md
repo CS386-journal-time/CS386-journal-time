@@ -91,7 +91,7 @@ Pull Request for Implementation:
 
 ## 3. Demo
 
-App Video (David)
+![Demo](./img/demo.wmv)
 
 
 ## 4. Code Quality
