@@ -20,20 +20,59 @@ Lorem Ipsum
 
 ### 2.3 Acceptance
 
-Lorem Ipsum
+For our Acceptance Testing our tests are very hands on and require a user to manually determine if the goal is achieved.  Accordingly, we did not use a test framework in the following tests.
+
+**Acceptance Test 1:** Create a journal entry on one device and view it on another device (Test Successful)
+
+User Logs into a handheld Android tablet and creates a Journal Entry for August 3, 2020.
+
+![tablet](./img/tabletEntry.jpg)
+
+User Logs into a Virtual Android Device to view August 3, 2020 Journal Entry.  Journal Entry appears and the test is successful.  
+
+![login](./img/simLogin.png)
+![simEntry](./img/simEntry.png)
+
+
+**Acceptance Test 2:** Confirm that App identifies my correct location. (Test Successful)
+
+Current Location: Flagstaff, AZ
+
+Initial Test on an Android Phone Simulator:
+
+![MV](./img/simMV.png)
+
+Within Simulator Map Displays Mountain View, CA which is home to Google, the makers of Android OS.  This is not what is desired but is logical given the simulators location.  We need to retest with an actual Android device.  Test is successful and this confirms that location finder can identify different locations.
+
+![flag](./img/tabletFlag.jpg)
+
 
 ## 3. Validation (user evaluation)
 
-Lorem Ipsum
-
 ### Script
 
-Lorem Ipsum
+Tasks:
+1. User creates an account
+2. User selects the drawer and selects "Personalize Color"
+3. User follows prompts to select new colors, saves, and returns to Calendar page with new color scheme.
+4. User selects a day and then selects "Edit" from the empty Journal entry
+5. User enters text, a photo, and sees current weather in current location.  User selects save.
+6. User sees this information within the current Journal Entry.
+7. User selects "View Map" within Journal Entry to see their current location on a map.  
+8. User returns to Journal Entry and then returns to "Home" and the Calendar page.
+9. User selects sign out.  
+
 
 ### Results
 
-Lorem Ipsum
+**Interview 1: John Hilley** Previously interviewed as part of Inception.
+Takeaways:
+- Impressed by functionality within the MVP and sees lots of potential to expand with other features.
+- It meets desired expectations.  
+- He has a desire to type entries on a computer keyboard and not text (expand to web)
+- Liked the automation aspects like weather and phone, and saw potential to automate more features within a finished product.
+- Customization has good potential and he liked the crazy color schemes that you could create.  He also thought that you could automate different aspects of design like time of day / season.  
 
 ### Reflections
 
-Lorem Ipsum
+Journal Time seems to offer a desired functionality to those who are interested in an enhanced journal experience.  As we finalize the MVP, we see great value with a flexible backend as it will allow our development teams to add on new features.  Furthermore, the flexibility can allow users to take advantage of some features and not others.  There is also great value in automation.  We just scratched the surface with the Maps and the Weather, but Journal Time could generate a plethora of valuable user context and information with limited effort from the user.  Finally, the user interface and the ability to customize colors, fonts, themes, and graphics is critical to a well received final product.  How we display the information is just as important as the information that we collect.  
