@@ -12,11 +12,11 @@ Users can also enter photos from their camera or camera roll into entries, as we
 
 #### 2.1.1 Chosen test package
 
-Test by Dart.dev (the developers of dart): [Test Package](https://pub.dev/packages/test)
+Test by Dart.dev (the developers of dart): [Chosen Test Package](https://pub.dev/packages/test)
 
 #### 2.1.2 Link to our test package
 
-TBA
+[Journal Time Test Package](https://github.com/CS386-journal-time/journal/blob/master/journal/lib/tests/unit_tests/journal_time_unit.dart)
 
 #### 2.1.3 Example test case
 
@@ -24,7 +24,7 @@ An example test case would be the verification of the user correctly being creat
 
 #### 2.1.4 Print screen of unit test execution
 
-TBA
+![Unit tests](./img/unit_tests.PNG)
 
 ### 2.2 Integration Test
 
@@ -38,7 +38,6 @@ Below the User enters text to be saved.
 Database view of the added information after a save.
 
 ![databse](./img/integrationDatabase.png)
-
 
 **Integeration Test: Color Change**
 
@@ -118,7 +117,6 @@ Tasks:
 7. User selects "View Map" within Journal Entry to see their current location on a map.  
 8. User returns to Journal Entry and then returns to "Home" and the Calendar page.
 9. User selects sign out.  
-
 
 ### Results
 
