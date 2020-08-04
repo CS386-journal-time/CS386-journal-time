@@ -8,11 +8,23 @@ Users can also enter photos from their camera or camera roll into entries, as we
 
 ## 2. Verification (tests)
 
-Lorem Ipsum
-
 ### 2.1 Unit Test
 
-Lorem Ipsum
+#### 2.1.1 Chosen test package
+
+Test by Dart.dev (the developers of dart): [Test Package](https://pub.dev/packages/test)
+
+#### 2.1.2 Link to test package
+
+TBA
+
+#### 2.1.3 Example test case
+
+An example test case would be the verification of the user correctly being created from the user model class.
+
+#### 2.1.4 Print screen of unit test execution
+
+TBA
 
 ### 2.2 Integration Test
 
