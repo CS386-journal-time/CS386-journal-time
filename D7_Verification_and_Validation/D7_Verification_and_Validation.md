@@ -88,7 +88,7 @@ Takeaways:
 - Liked the automation aspects like weather and phone, and saw potential to automate more features within a finished product.
 - Customization has good potential and he liked the crazy color schemes that you could create.  He also thought that you could automate different aspects of design like time of day / season.  
 
-**Interview 1: Maddie Burchfield** Previously interviewed as part of Inception.
+**Interview 2: Maddie Burchfield** Previously interviewed as part of Inception.
 
 Takeaways:
 
