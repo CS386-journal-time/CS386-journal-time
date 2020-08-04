@@ -28,7 +28,16 @@ TBA
 
 ### 2.2 Integration Test
 
-Lorem Ipsum
+**Integration Test: Save to Database**
+We want to show that data was successfully stored in the database after the user enters it.  Given our application and database design within Flutter, it was challenging to implement automated integration testing.  
+
+Below the User enters text to be saved.
+
+![save](./img/integrationSave.png)
+
+Database view of the added information after a save.
+
+![databse](./img/integrationDatabase.png)
 
 ### 2.3 Acceptance
 
