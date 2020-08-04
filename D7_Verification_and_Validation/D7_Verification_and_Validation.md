@@ -14,7 +14,7 @@ Users can also enter photos from their camera or camera roll into entries, as we
 
 Test by Dart.dev (the developers of dart): [Test Package](https://pub.dev/packages/test)
 
-#### 2.1.2 Link to test package
+#### 2.1.2 Link to our test package
 
 TBA
 
@@ -64,6 +64,7 @@ Within Simulator Map Displays Mountain View, CA which is home to Google, the mak
 ### Script
 
 Tasks:
+
 1. User creates an account
 2. User selects the drawer and selects "Personalize Color"
 3. User follows prompts to select new colors, saves, and returns to Calendar page with new color scheme.
@@ -78,12 +79,24 @@ Tasks:
 ### Results
 
 **Interview 1: John Hilley** Previously interviewed as part of Inception.
+
 Takeaways:
+
 - Impressed by functionality within the MVP and sees lots of potential to expand with other features.
 - It meets desired expectations.  
 - He has a desire to type entries on a computer keyboard and not text (expand to web)
 - Liked the automation aspects like weather and phone, and saw potential to automate more features within a finished product.
 - Customization has good potential and he liked the crazy color schemes that you could create.  He also thought that you could automate different aspects of design like time of day / season.  
+
+**Interview 1: Maddie Burchfield** Previously interviewed as part of Inception.
+
+Takeaways:
+
+- Liked the functionality presented.
+- Thought the app was easy to use and navigate.
+- Enjoyed customizing the app with different colors.
+- Had some ideas about new features for the map, such as navigation.
+- Would like to see an option to share her entry.
 
 ### Reflections
 
