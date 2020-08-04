@@ -72,7 +72,7 @@ Journal page with updated color:
 
 Journal edit page with updated color:
 
-![neweditjournal](./img/coloraccross3.PNG)
+![neweditjournal](./img/coloracross3.PNG)
 
 ### 2.3 Acceptance
 
