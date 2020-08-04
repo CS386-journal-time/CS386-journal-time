@@ -33,7 +33,7 @@ We want to show that data was successfully stored in the database after the user
 
 Below the User enters text to be saved.
 
-![save](./img/IntegrationSave.png)
+![save](./img/integrationSave.jpg)
 
 Database view of the added information after a save.
 
