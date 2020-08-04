@@ -39,6 +39,41 @@ Database view of the added information after a save.
 
 ![databse](./img/integrationDatabase.png)
 
+
+**Integeration Test: Color Change**
+
+In this test we want to show that colors were successfully passed to the material app to be distributed as a theme across the whole app. This test would be a white box test as the tester knows the input and inside of the app and knows what to expect for output. However due to our apps design we will only walk through how the test would have been implemented.
+
+Below the User starts in the personalization screen of the app before selecting new colors.
+
+ ![personilizeScreen](./img/color1.PNG)
+
+Next the user selects a background color and a canvas color
+ 
+ ![background](./img/backgroundcolor.PNG)
+
+ ![canvas](./img/canvascolor.PNG)
+
+
+Those colors are passed back to the personalization screen as shown below. This allows the user to preview their colors before submitting changes.
+
+ ![preview](./img/newcolor.PNG)
+
+ 
+Finally once the user hits submit  the changes are sent to the rest of the app.
+
+Calendar with updated color:
+ 
+ ![newCalandar](./img/coloraccross1.PNG)
+
+Journal page with updated color:
+
+![newjournal](./img/coloraccross2.PNG)
+
+Journal edit page with updated color:
+
+![neweditjournal](./img/coloraccross3.PNG)
+
 ### 2.3 Acceptance
 
 For our Acceptance Testing our tests are very hands on and require a user to manually determine if the goal is achieved.  Accordingly, we did not use a test framework in the following tests.
